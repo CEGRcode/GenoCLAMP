@@ -164,7 +164,6 @@ class GreedyEngine:
 
     def one_iteration(self, n_processes: Union[None, int] = None):
         current_clusters = list(self.clusters_trace[-1])
-        nclusters = len(current_clusters)
         all_combos = set(itertools.combinations(current_clusters, 2))
 
         with ThreadPoolExecutor(max_workers=n_processes) as executor:
