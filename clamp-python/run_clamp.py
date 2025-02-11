@@ -13,6 +13,7 @@ def parse_meme_files(meme_files, nsites_thresh=10, evalue_thresh=.1,
     sources = []
     n = 0
     for fn in meme_files:
+        file_n = 1
         with open(fn, 'r') as f:
             for line in f:
                 nsites_match = nsites_pattern.match(line)
@@ -28,7 +29,8 @@ def parse_meme_files(meme_files, nsites_thresh=10, evalue_thresh=.1,
                         weights_match = weights_pattern.match(line)
                     if nsites >= nsites_thresh and evalue <= evalue_thresh:
                         items.append(GreedyItem(n, np.array(rows)))
-                        sources.append(('{}-motif{}'.format(fn, n), nsites, evalue))
+                        sources.append(('{}-motif{}'.format(fn, file_n), nsites, evalue))
+                        file_n += 1
                         n += 1
     
     return items, sources
