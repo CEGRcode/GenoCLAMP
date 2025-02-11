@@ -5,15 +5,15 @@ from typing import Union
 def boltzmann(arr: np.ndarray, alpha: float, axis: Union[None, int, tuple] = None):
     return np.sum(arr * np.exp(alpha * arr), axis=axis) / np.sum(np.exp(alpha * arr), axis=axis)
     
-    
+
 def trim_motif(aligned_pwms, info_thresh=.5):
     pwm = np.sum(aligned_pwms, axis=0)
 
     if aligned_pwms.shape[1] == 1:
         return pwm
 
-    posterior_pwm = (pwm + 1.) / (np.sum(pwm, axis=1, keepdims=True) + 4.)
-    bits = np.sum(posterior_pwm * np.log2(posterior_pwm), axis=1) + 2.
+    posterior_pwm = (pwm + 1.) / np.sum(pwm + 1., axis=1, keepdims=True)
+    bits = np.sum(posterior_pwm * np.log2(posterior_pwm), axis=1) + np.log2(aligned_pwms.shape[2])
     informative_bits = np.flatnonzero(bits > info_thresh)
     start = informative_bits[0]
     end = informative_bits[-1] + 1

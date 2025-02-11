@@ -42,7 +42,7 @@ if __name__ == '__main__':
     parser.add_argument('--meme-list', default=None, help='File containing list of MEME files to process')
     parser.add_argument('--nsites-thresh', type=int, default=10, help='Minimum number of sites to consider a motif')
     parser.add_argument('--evalue-thresh', type=float, default=.1, help='Maximum E-value to consider a motif')
-    parser.add_argument('--pc', nargs=4, type=float, default=[1., 1., 1., 1.], help='Prior counts for PWM')
+    parser.add_argument('--pc', nargs='+', type=float, default=[1., 1., 1., 1.], help='Prior counts for PWM')
     parser.add_argument('--min-information-overlap', type=float, default=8., help='Minimum information overlap for merging')
     parser.add_argument('--max-information-overhang', type=float, default=12., help='Maximum information overhang for merging')
     parser.add_argument('--concentration', type=float, default=1., help='Concentration parameter for merging')
