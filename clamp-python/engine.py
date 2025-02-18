@@ -6,7 +6,17 @@ import itertools
 from concurrent.futures import ThreadPoolExecutor
 from numba import jit, float64
 import numba as nb
+import ctypes
+from numba.extending import overload, get_cython_function_address
 from utils import boltzmann
+
+loggamma_c = ctypes.CFUNCTYPE(ctypes.c_double, ctypes.c_double)(
+    get_cython_function_address('scipy.special.cython_special', '__pyx_fuse_1loggamma')
+)
+def loggamma_kernel(*args):
+    if args == (float64,):
+        return lambda *args: loggamma_c(*args)
+overload(loggamma)(loggamma_kernel)
 
 @jit(float64(float64[:, :, :], float64[:], float64[:], float64, float64), nopython=True, nogil=True)
 def compute_llr(aligned_pwms: np.ndarray, pc: np.ndarray, lgpc: np.ndarray, pc_sum: float, lga: float):
