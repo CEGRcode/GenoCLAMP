@@ -136,9 +136,9 @@ class GreedyCluster:
         self.merged_from = merged_from
 
 class GreedyEngine:
-    def __init__(self, items: List[GreedyItem], pc: np.ndarray = np.ones(4),
-                 min_base_overlap: int = 4, min_information_overlap: float = 8.,
-                 max_information_overhang: float = 12., concentration: float = 1.):
+    def __init__(self, items: List[GreedyItem], pc: np.ndarray = np.array([2., 2., 2., 2.]),
+                 min_base_overlap: int = 4, min_information_overlap: float = 0.,
+                 max_information_overhang: float = 12., concentration: float = .5):
         self.items = items
         self.clusters = [GreedyCluster(idx, [item], item.pwm.reshape(1, *item.pwm.shape), 0., None)
                          for idx, item in enumerate(items) if item.pwm.shape[1] == len(pc)]
