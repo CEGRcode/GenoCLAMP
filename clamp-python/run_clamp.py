@@ -42,7 +42,7 @@ if __name__ == '__main__':
     parser.add_argument('--meme-list', default=None, help='File containing list of MEME files to process')
     parser.add_argument('--nsites-thresh', type=int, default=10, help='Minimum number of sites to consider a motif')
     parser.add_argument('--evalue-thresh', type=float, default=.1, help='Maximum E-value to consider a motif')
-    parser.add_argument('--pc', nargs='+', type=float, default=[2., 2., 2., 2.], help='Prior counts for PWM')
+    parser.add_argument('--pc', nargs='+', type=float, default=[2., 2., 2., 2.], help='Alpha parameters for Dirichlet prior')
     parser.add_argument('--min-base-overlap', type=int, default=4, help='Minimum number of bases to overlap for merging')
     parser.add_argument('--min-information-overlap', type=float, default=0., help='Minimum information overlap for merging')
     parser.add_argument('--max-information-overhang', type=float, default=12., help='Maximum information overhang for merging')
@@ -73,11 +73,13 @@ if __name__ == '__main__':
 
     maximal_clusters = engine.clusters_trace[np.argmax(engine.llr_trace)]
     for c in maximal_clusters:
+        # Create a directory for each cluster
         if not os.path.exists('{}/cluster{}'.format(args.output_dest, c)):
             os.mkdir('{}/cluster{}'.format(args.output_dest, c))
 
         cluster = engine.clusters[c]
 
+        # Write the aligned PFMs to a TRANSFAC file
         with open('{0}/cluster{1}/cluster{1}_aligned-motifs.transfac'.format(args.output_dest, c), 'w') as f:
             for i in range(len(cluster.items)):
                 motif_id = sources[cluster.items[i].idx][0]
@@ -85,21 +87,23 @@ if __name__ == '__main__':
                 f.write('XX\n')
                 f.write('ID\t{}\n'.format(motif_id))
                 f.write('PO\tA\tC\tG\tT\n')
-                pfm = cluster.aligned_pwms[i, :, :]
+                pfm = cluster.aligned_pfms[i, :, :]
                 for j in range(pfm.shape[0]):
                     f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *pfm[j, :]))
                 f.write('XX\n//\n')
 
+        # Write the consensus PFM to a TRANSFAC file
         with open('{0}/cluster{1}/cluster{1}_consensus-pfm.transfac'.format(args.output_dest, c), 'w') as f:
             f.write('AC\t{}\n'.format('cluster{}'.format(c)))
             f.write('XX\n')
             f.write('ID\t{}\n'.format('cluster{}'.format(c)))
             f.write('PO\tA\tC\tG\tT\n')
-            trimmed_pwm = trim_motif(cluster.aligned_pwms, args.info_thresh)
-            for j in range(trimmed_pwm.shape[0]):
-                f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *trimmed_pwm[j, :]))
+            trimmed_pfm = trim_motif(cluster.aligned_pfms, args.info_thresh)
+            for j in range(trimmed_pfm.shape[0]):
+                f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *trimmed_pfm[j, :]))
             f.write('XX\n//\n')
 
-        svg = plot_logo_stack(cluster.aligned_pwms)
+        # Plot the aligned PFMs as an SVG
+        svg = plot_logo_stack(cluster.aligned_pfms)
         with open('{0}/cluster{1}/cluster{1}.svg'.format(args.output_dest, c), 'w') as f:
             svg.writexml(f, addindent='\t', newl='\n')

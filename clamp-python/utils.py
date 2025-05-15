@@ -3,23 +3,32 @@ import xml.dom.minidom as dom
 from typing import Union
 
 def boltzmann(arr: np.ndarray, alpha: float, axis: Union[None, int, tuple] = None):
+    '''
+    Boltzmann operator as described by https://en.wikipedia.org/wiki/Smooth_maximum#Boltzmann_operator
+    '''
     return np.sum(arr * np.exp(alpha * arr), axis=axis) / np.sum(np.exp(alpha * arr), axis=axis)
     
+def trim_motif(aligned_pfms, info_thresh=.5):
+    '''
+    Trims bases from the start and end of a PFM stack with information content below info_thresh
+    '''
+    pfm = np.sum(aligned_pfms, axis=0)
 
-def trim_motif(aligned_pwms, info_thresh=.5):
-    pwm = np.sum(aligned_pwms, axis=0)
+    # If there is only one motif, return the original PFM
+    if aligned_pfms.shape[1] == 1:
+        return pfm
 
-    if aligned_pwms.shape[1] == 1:
-        return pwm
-
-    posterior_pwm = (pwm + 1.) / np.sum(pwm + 1., axis=1, keepdims=True)
-    bits = np.sum(posterior_pwm * np.log2(posterior_pwm), axis=1) + np.log2(aligned_pwms.shape[2])
+    # Calculate the posterior probability of each base (1 pseudocount)
+    posterior_pwm = (pfm + 1.) / np.sum(pfm + 1., axis=1, keepdims=True)
+    # Calculate the information content of each base
+    bits = np.sum(posterior_pwm * np.log2(posterior_pwm), axis=1) + np.log2(aligned_pfms.shape[2])
+    # Trim the PFM to only include bases with information content above the threshold
     informative_bits = np.flatnonzero(bits > info_thresh)
     start = informative_bits[0]
     end = informative_bits[-1] + 1
-    return pwm[start:end, :]
+    return pfm[start:end, :]
 
-
+# Classes for DNA symbols in SVG format
 class DNASymbol:
     path = None
     color = None
@@ -48,9 +57,17 @@ class DNA_T(DNASymbol):
 
 DNASymbol.DNA_alphabet = (DNA_A, DNA_C, DNA_G, DNA_T)
 
+# TODO: Add RNA and protein symbols
 
-def plot_logo_stack(aligned_pwms, symbol=DNASymbol, glyph_width=100, stack_height=200):
-    height, width, _ = aligned_pwms.shape
+def plot_logo_stack(aligned_pfms, symbol=DNASymbol, glyph_width=100, stack_height=200):
+    '''
+    Plots a stack of logos for a stack of aligned PFMs and outputs it as an SVG
+    To save the SVG:
+        doc = plot_logo_stack(aligned_pfms)
+        with open(filename, 'w') as f:
+            doc.writexml(f, addindent='\t', newl='\n')
+    '''
+    height, width, _ = aligned_pfms.shape
 
     document = dom.Document()
     svg = document.appendChild(document.createElement('svg'))
@@ -61,10 +78,10 @@ def plot_logo_stack(aligned_pwms, symbol=DNASymbol, glyph_width=100, stack_heigh
 
     logo_stack = svg.appendChild(document.createElement('g'))
 
-    for y, pwm in enumerate(aligned_pwms):
+    for y, pfm in enumerate(aligned_pfms):
         row = logo_stack.appendChild(document.createElement('g'))
         row.setAttribute('transform', 'translate(0 {})'.format(y * stack_height))
-        for i, pwv in enumerate(pwm):
+        for i, pwv in enumerate(pfm):
             n = np.sum(pwv)
             if n == 0:
                 continue
