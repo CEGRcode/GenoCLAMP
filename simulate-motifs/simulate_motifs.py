@@ -1,6 +1,38 @@
 import numpy as np
 import argparse
-from CLAMP.parse_tf import parse_tf
+
+def parse_tf(fn):
+    pwms = {}
+    metadata = {}
+    with open(fn, 'r') as f:
+        rows = []
+        for line in f:
+            if line.startswith('ID'):
+                motif_id = line.split()[1].strip()
+                f.readline()
+                line = f.readline()
+                while not line.startswith('XX'):
+                    row = np.zeros(4)
+                    fields = line.split()
+                    for i in range(4):
+                        row[i] = float(fields[i + 1])
+                    rows.append(row)
+                    line = f.readline()
+                pwms[motif_id] = np.stack(rows)
+                metadata[motif_id] = {}
+                rows = []
+                line = f.readline()
+                while not line.startswith('XX'):
+                    if line.startswith('PD'):
+                        metadata[motif_id]['PD'] = int(line.split()[1])
+                    if line.startswith('LO'):
+                        metadata[motif_id]['LO'] = int(line.split()[1])
+                    elif line.startswith('RO'):
+                        metadata[motif_id]['RO'] = int(line.split()[1])
+                    elif line.startswith('RC'):
+                        metadata[motif_id]['RC'] = int(line.split()[1]) == 1
+                    line = f.readline()
+    return pwms, metadata
 
 def write_pfm(motif_id, pwm, nsites, forward_offset, reverse_offset, rc, out_fh,
               rng=np.random.default_rng()):
