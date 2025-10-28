@@ -2,6 +2,8 @@ import numpy as np
 import xml.dom.minidom as dom
 from typing import Union
 from scipy.stats import pearsonr
+import json
+from collections import namedtuple
 
 def highest_n_info_sum(pfm, n=4, w=3):
     '''
@@ -91,36 +93,39 @@ def trim_motif(aligned_pfms, info_thresh=.5, w=2):
     end = informative_bits[-1] + w
     return pfm[start:end, :], start, pfm.shape[0] - end, True
 
-# Classes for DNA symbols in SVG format
+with open('../logo_symbols/glyphs.json', 'r') as f:
+    glyph_data = json.load(f)
+with open('../logo_symbols/symbol_library.json', 'r') as f:
+    symbol_library = json.load(f)
+
+ColoredGlyph = namedtuple('ColoredGlyph', ['path', 'color'])
+
 class DNASymbol:
-    path = None
-    color = None
-    max_bits = 2
-    DNA_alphabet = ()
+    max_bits = symbol_library['DNA']['max_bits']
+    DNA_alphabet = tuple(ColoredGlyph(path=glyph_data[s['name']]['path'], color=s['color']) \
+                         for s in symbol_library['DNA']['symbols'])
 
     @classmethod
     def get_symbol(cls, i):
         return cls.DNA_alphabet[i]
 
-class DNA_A(DNASymbol):
-    path = 'M 0 100 L 33 0 L 66 0 L 100 100 L 75 100 L 66 75 L 33 75 L 25 100 L 0 100 M 41 55 L 58 55 L 50 25 L 41 55'
-    color = '#FF0000'
+class RNASymbol:
+    max_bits = symbol_library['RNA']['max_bits']
+    RNA_alphabet = tuple(ColoredGlyph(path=glyph_data[s['name']]['path'], color=s['color']) \
+                         for s in symbol_library['RNA']['symbols'])
+    
+    @classmethod
+    def get_symbol(cls, i):
+        return cls.RNA_alphabet[i]
 
-class DNA_C(DNASymbol):
-    path = 'M 100 28 C 100 -13 0 -13 0 50 C 0 113 100 113 100 72 L 75 72 C 75 90 30 90 30 50 C 30 10 75 10 75 28 Z'
-    color = '#0000FF'
-
-class DNA_G(DNASymbol):
-    path = 'M 100 28 C 100 -13 0 -13 0 50 C 0 113 100 113 100 72 L 100 48 L 55 48 L 55 72 L 75 72 C 75 90 30 90 30 50 C 30 10 75 5 75 28 Z'
-    color = '#FFA500'
-
-class DNA_T(DNASymbol):
-    path = 'M 0 0 L 0 20 L 35 20 L 35 100 L 65 100 L 65 20 L 100 20 L 100 0 Z'
-    color = '#228B22'
-
-DNASymbol.DNA_alphabet = (DNA_A, DNA_C, DNA_G, DNA_T)
-
-# TODO: Add RNA and protein symbols
+class AASymbol:
+    max_bits = symbol_library['AA']['max_bits']
+    AA_alphabet = tuple(ColoredGlyph(path=glyph_data[s['name']]['path'], color=s['color']) \
+                        for s in symbol_library['AA']['symbols'])
+    
+    @classmethod
+    def get_symbol(cls, i):
+        return cls.AA_alphabet[i]
 
 def plot_logo_stack(aligned_pfms, symbol=DNASymbol, glyph_width=100, stack_height=200):
     '''

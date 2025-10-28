@@ -1,0 +1,50 @@
+{
+    "DNA": {
+        "symbols": [
+            {"name": "A", "color": "#FF0000"},
+            {"name": "C", "color": "#0000FF"},
+            {"name": "G", "color": "#FFA500"},
+            {"name": "T", "color": "#228B22"}
+        ],
+        "max_bits": 2,
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/logo/dnalogo.js"
+    },
+    "RNA": {
+        "symbols": [
+            {"name": "A", "color": "#FF0000"},
+            {"name": "C", "color": "#0000FF"},
+            {"name": "G", "color": "#FFA500"},
+            {"name": "U", "color": "#228B22"}
+        ],
+        "max_bits": 2,
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/logo/rnalogo.js"
+    },
+    "AA": {
+        "symbols": [
+            {"name": "A", "color": "#000000"},
+            {"name": "B", "color": "#BB8800"},
+            {"name": "C", "color": "#008811"},
+            {"name": "D", "color": "#FF0000"},
+            {"name": "E", "color": "#FF0022"},
+            {"name": "F", "color": "#333333"},
+            {"name": "G", "color": "#007700"},
+            {"name": "H", "color": "#220099"},
+            {"name": "I", "color": "#111111"},
+            {"name": "K", "color": "#0000AA"},
+            {"name": "L", "color": "#002222"},
+            {"name": "M", "color": "#220022"},
+            {"name": "N", "color": "#009911"},
+            {"name": "P", "color": "#080808"},
+            {"name": "Q", "color": "#00AA00"},
+            {"name": "R", "color": "#0022AA"},
+            {"name": "S", "color": "#008F00"},
+            {"name": "T", "color": "#006600"},
+            {"name": "V", "color": "#222200"},
+            {"name": "W", "color": "#080808"},
+            {"name": "Y", "color": "#00A800"},
+            {"name": "Z", "color": "#AAAA00"}
+        ],
+        "max_bits": 4.459431618637297,
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/logo/aalogo.js"
+    }
+}

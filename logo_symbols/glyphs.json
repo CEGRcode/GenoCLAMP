@@ -1,0 +1,106 @@
+{
+    "A": {
+        "path": "M 0 100 L 33 0 L 66 0 L 100 100 L 75 100 L 66 75 L 33 75 L 25 100 Z M 41 55 L 58 55 L 50 25 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/A.jsx"
+    },
+    "B": {
+        "path": "M 0 0 L 80 0 C 105 0 105 50 80 50 C 105 50 105 100 80 100 L 0 100 Z M 20 15 L 20 35 L 70 35 C 80 35 80 15 70 15 Z M 20 65 L 20 85 L 70 85 C 80 85 80 65 70 65 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/B.jsx"
+    },
+    "C": {
+        "path": "M 100 28 C 100 -13 0 -13 0 50 C 0 113 100 113 100 72 L 75 72 C 75 90 30 90 30 50 C 30 10 75 10 75 28 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/C.jsx"
+    },
+    "D": {
+        "path": "M 0 0 L 60 0 C 110 0 110 100 60 100 L 0 100 Z M 20 15 L 20 85 L 40 85 C 85 85 85 15 40 15 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/D.jsx"
+    },
+    "E": {
+        "path": "M 0 0 L 100 0 L 100 20 L 20 20 L 20 40 L 90 40 L 90 60 L 20 60 L 20 80 L 100 80 L 100 100 L 0 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/E.jsx"
+    },
+    "F": {
+        "path": "M 0 0 L 100 0 L 100 20 L 20 20 L 20 40 L 80 40 L 80 60 L 20 60 L 20 100 L 0 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/F.jsx"
+    },
+    "G": {
+        "path": "M 100 28 C 100 -13 0 -13 0 50 C 0 113 100 113 100 72 L 100 48 L 55 48 L 55 72 L 75 72 C 75 90 30 90 30 50 C 30 10 75 5 75 28 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/G.jsx"
+    },
+    "H": {
+        "path": "M 0 0 L 20 0 L 20 40 L 80 40 L 80 0 L 100 0 L 100 100 L 80 100 L 80 60 L 20 60 L 20 100 L 0 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/H.jsx"
+    },
+    "I": {
+        "path": "M 40 0 L 60 0 L 60 100 L 40 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/I.jsx"
+    },
+    "J": {
+        "path": "M 0 60 C 0 111 100 111 100 60 L 100 0 L 75 0 L 75 60 C 80 90 20 90 25 60 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/J.jsx"
+    },
+    "K": {
+        "path": "M 0 0 L 20 0 L 20 40 L 75 0 L 100 0 L 50 50 L 100 100 L 75 100 L 30 65 L 20 75 L 20 100 L 0 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/K.jsx"
+    },
+    "L": {
+        "path": "M 0 0 L 0 100 L 100 100 L 100 80 L 20 80 L 20 0 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/L.jsx"
+    },
+    "M": {
+        "path": "M 0 0 L 20 0 L 50 35 L 80 0 L 100 0 L 100 100 L 80 100 L 80 30 L 50 65 L 20 30 L 20 100 L 0 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/M.jsx"
+    },
+    "N": {
+        "path": "M 0 100 L 0 0 L 20 0 L 80 75 L 80 0 L 100 0 L 100 100 L 80 100 L 20 25 L 20 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/N.jsx"
+    },
+    "O": {
+        "path": "M 50 0 A 50 50 0 0 0 50 100 A 50 50 0 0 0 50 0 Z M 50 18 A 32 32 0 0 1 50 82 A 32 32 0 0 1 50 18 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/O.jsx"
+    },
+    "P": {
+        "path": "M 0 0 L 80 0 C 105 0 105 50 80 50 L 20 50 L 20 100 L 0 100 Z M 20 15 L 20 35 L 70 35 C 80 35 80 15 70 15 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/P.jsx"
+    },
+    "Q": {
+        "path": "M 50 0 A 50 50 0 0 0 50 100 A 50 50 0 0 0 50 0 Z M 50 18 A 32 32 0 0 1 50 82 A 32 32 0 0 1 50 18 Z M 85 100 L 100 85 L 70 55 L 55 70 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/Q.jsx"
+    },
+    "R": {
+        "path": "M 0 0 L 80 0 C 105 0 105 50 80 50 C 100 50 100 70 100 70 L 100 100 L 80 100 L 80 80 C 80 80 80 60 50 60 L 20 60 L 20 100 L 0 100 Z M 20 15 L 20 35 L 70 35 C 80 35 80 15 70 15 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/R.jsx"
+    },
+    "S": {
+        "path": "M23.9,68.9c.8,4.3,2.5,7.5,4.5,9.8,4.1,3.9,11.1,5.9,21.4,5.9s10.7-.7,14.8-1.6c7-2,10.7-5.6,10.7-11.1s-1.6-5.6-5.3-7.2c-3.3-1.6-9.1-3.3-16.5-4.6l-12.8-2.3c-12.8-2.3-21.4-4.6-26.3-7.2-8.2-4.3-11.9-11.1-11.9-20.7S6.6,14.1,14.4,8.5,33.7,0,49,0s23.5,2.6,32.5,7.9,13.6,13.1,14,23.3h-23.9c-.4-5.6-3.7-9.8-9.5-12.1-4.1-1.6-9.1-2.3-14.8-2.3s-11.9,1-15.6,3-5.8,4.9-5.8,8.5,2.1,5.9,5.8,7.5c2.5,1,7.8,2.3,16,3.9l21,3.9c9.1,1.6,16,3.9,20.6,6.9,7,4.6,10.7,10.8,10.7,19.3s-4.1,16.1-12.8,21.6c-8.2,5.9-20.2,8.5-35.8,8.5s-28-3-37-8.5c-9.9-4.9-14.4-12.8-14.4-22.6h23.9",
+        "source": "https://www.svgrepo.com/svg/402071/letter-s"
+    },
+    "T": {
+        "path": "M 0 0 L 0 20 L 35 20 L 35 100 L 65 100 L 65 20 L 100 20 L 100 0 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/T.jsx"
+    },
+    "U": {
+        "path": "M 0 0 L 0 60 C 0 111 100 111 100 60 L 100 0 L 75 0 L 75 60 C 80 90 20 90 25 60 L 25 0 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/U.jsx"
+    },
+    "V": {
+        "path": "M 0 0 L 20 0 L 50 80 L 80 0 L 100 0 L 60 100 L 40 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/V.jsx"
+    },
+    "W": {
+        "path": "M 0 0 L 20 0 L 30 70 L 50 30 L 70 70 L 80 0 L 100 0 L 90 100 L 70 100 L 50 65 L 30 100 L 10 100 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/W.jsx"
+    },
+    "X": {
+        "path": "M 0 0 L 20 0 L 50 40 L 80 0 L 100 0 L 70 50 L 100 100 L 80 100 L 50 60 L 20 100 L 0 100 L 30 50 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/X.jsx"
+    },
+    "Y": {
+        "path": "M 0 0 L 20 0 L 50 45 L 80 0 L 100 0 L 60 60 L 60 100 L 40 100 L 40 60 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/Y.jsx"
+    },
+    "Z": {
+        "path": "M 0 0 L 100 0 L 100 20 L 35 80 L 100 80 L 100 100 L 0 100 L 0 80 L 65 20 L 0 20 Z",
+        "source": "https://github.com/weng-lab/logojs-package/blob/a5660fcce1d783446982464f7b15f27956bf28ec/src/components/glyphs/Z.jsx"
+    }
+}
