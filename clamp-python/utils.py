@@ -8,25 +8,34 @@ def boltzmann(arr: np.ndarray, alpha: float, axis: Union[None, int, tuple] = Non
     '''
     return np.sum(arr * np.exp(alpha * arr), axis=axis) / np.sum(np.exp(alpha * arr), axis=axis)
     
-def trim_motif(aligned_pfms, info_thresh=.5):
+def trim_motif(aligned_pfms, info_thresh=.5, w=2):
     '''
     Trims bases from the start and end of a PFM stack with information content below info_thresh
     '''
     pfm = np.sum(aligned_pfms, axis=0)
 
     # If there is only one motif, return the original PFM
-    if aligned_pfms.shape[1] == 1:
-        return pfm
+    if aligned_pfms.shape[0] == 1:
+        return pfm, 0, pfm.shape[0], False
 
     # Calculate the posterior probability of each base (1 pseudocount)
-    posterior_pwm = (pfm + 1.) / np.sum(pfm + 1., axis=1, keepdims=True)
+    pwm = pfm / np.sum(pfm, axis=1, keepdims=True)
+    pwm[pwm == 0.] = 1.
     # Calculate the information content of each base
-    bits = np.sum(posterior_pwm * np.log2(posterior_pwm), axis=1) + np.log2(aligned_pfms.shape[2])
+    bits = np.sum(pwm * np.log2(pwm), axis=1) + np.log2(aligned_pfms.shape[2])
+    val = sum(bits[:w]) / w
+    mean_bits = np.zeros(aligned_pfms.shape[1] - w + 1, dtype=np.float64)
+    mean_bits[0] = val
+    for i in range(w, len(bits)):
+        val += (bits[i] - bits[i - w]) / w
+        mean_bits[i - w + 1] = val
     # Trim the PFM to only include bases with information content above the threshold
-    informative_bits = np.flatnonzero(bits > info_thresh)
+    informative_bits = np.flatnonzero(mean_bits > info_thresh)
+    if len(informative_bits) <= 1:
+        return pfm, 0, pfm.shape[0], False
     start = informative_bits[0]
-    end = informative_bits[-1] + 1
-    return pfm[start:end, :]
+    end = informative_bits[-1] + w
+    return pfm[start:end, :], start, pfm.shape[0] - end, True
 
 # Classes for DNA symbols in SVG format
 class DNASymbol:
