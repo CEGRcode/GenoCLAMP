@@ -1,63 +1,9 @@
-import re
 import numpy as np
 import os
-from engine import GreedyEngine, GreedyItem
+from engine import GreedyEngine
 from utils import trim_motif, plot_logo_stack
+from input import parse_meme_files
 import argparse
-
-def parse_meme_files(meme_files, nsites_thresh=10, evalue_thresh=.1,
-    nsites_pattern = re.compile('letter-probability matrix: alength= \d+ w= \d+ nsites= (\d+) E= ([\d.+e-]+)'),
-    weights_pattern = re.compile('\s*([\d\.]+)\s*([\d\.]+)\s*([\d\.]+)\s*([\d\.]+)'),
-    width_pattern = re.compile('MOTIF.+width =\s+(\d+)'), get_sites=False):
-
-    items = []
-    sources = []
-    sites = {}
-    n = 0
-    for fn in meme_files:
-        file_n = 1
-        with open(fn, 'r') as f:
-            for line in f:
-                nsites_match = nsites_pattern.match(line)
-                width_match = width_pattern.match(line)
-                if width_match:
-                    width = int(width_match.groups()[0])
-                if line.strip().endswith('sites sorted by position p-value') and get_sites:
-                    f.readline()
-                    f.readline()
-                    f.readline()
-                    line = f.readline()
-                    sites[n] = set()
-                    while line.startswith('chr'):
-                        region = line.strip().split('(')[0]
-                        offset = int(line[30:37])
-                        chrom, coords = region.split(':')
-                        start = int(coords.split('-')[0]) + offset - 1
-                        stop = start + width
-                        sites[n].add((chrom, start, stop, line[29]))
-                        line = f.readline()
-
-                if nsites_match:
-                    nsites = int(nsites_match.groups()[0])
-                    evalue = float(nsites_match.groups()[1])
-                    rows = []
-                    line = f.readline()
-                    weights_match = weights_pattern.match(line)
-                    while weights_match:
-                        rows.append([float(w) * nsites for w in weights_match.groups()])
-                        line = f.readline()
-                        weights_match = weights_pattern.match(line)
-                    if nsites >= nsites_thresh and evalue <= evalue_thresh:
-                        source = ('{}-motif{}'.format(fn, file_n), nsites, evalue)
-                        items.append(GreedyItem(n, np.array(rows), source, sites[n] if get_sites else set()))
-                        sources.append(source)
-                        file_n += 1
-                        n += 1
-                    elif get_sites:
-                        sites.pop(n)
-    
-    return items, sources, sites
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run CLAMP on a set of MEME files')
@@ -89,7 +35,7 @@ if __name__ == '__main__':
     if not os.path.exists(args.output_dest):
         os.makedirs(args.output_dest)
     
-    items, sources, sites = parse_meme_files(meme_files, args.nsites_thresh, args.evalue_thresh, get_sites=args.get_sites)
+    items, sources, sites = parse_meme_files(meme_files, get_sites=args.get_sites)
     engine = GreedyEngine(items, pc=args.pc, min_base_overlap=args.min_base_overlap,
         min_information_overlap=args.min_information_overlap,
         max_information_overhang=args.max_information_overhang, concentration=args.concentration)
