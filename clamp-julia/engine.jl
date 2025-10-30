@@ -37,7 +37,7 @@ function GreedyCluster(idx::Int64, items::Vector{GreedyItem},
 
     aligned_pfms_eps = aligned_pfms .+ 1e-20
     aligned_posterior_pwms = aligned_pfms_eps ./ sum(aligned_pfms_eps, dims=3)
-    min_bits = dropdims(boltzmann(dropdims(sum(aligned_posterior_pwms .* log2.(aligned_posterior_pwms), dims=3), dims=3) .+ 2., -2., 1), dims=1)
+    min_bits = dropdims(Utils.boltzmann(dropdims(sum(aligned_posterior_pwms .* log2.(aligned_posterior_pwms), dims=3), dims=3) .+ 2., -2., 1), dims=1)
     
     consensus_pwm = dropdims(sum(aligned_pfms_eps, dims=1) ./ sum(aligned_pfms_eps, dims=(1, 3)), dims=1)
     bits = dropdims(sum(consensus_pwm .* log2.(consensus_pwm), dims=2), dims=2) .+ 2
