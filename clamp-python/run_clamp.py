@@ -1,8 +1,9 @@
 import numpy as np
 import os
 from engine import GreedyEngine
-from utils import trim_motif, plot_logo_stack, filter_motifs
+from utils import filter_motifs
 from input import parse_meme_files
+from output import write_aligned_transfac, write_consensus_transfac, plot_logo_stack
 import argparse
 
 if __name__ == '__main__':
@@ -57,28 +58,11 @@ if __name__ == '__main__':
         cluster = engine.clusters[c]
 
         # Write the aligned PFMs to a TRANSFAC file
-        with open('{0}/cluster{1}/cluster{1}_aligned-motifs.transfac'.format(args.output_dest, c), 'w') as f:
-            for i in range(len(cluster.items)):
-                motif_id = sources[cluster.items[i].idx][0]
-                f.write('AC\t{}\n'.format(motif_id))
-                f.write('XX\n')
-                f.write('ID\t{}\n'.format(motif_id))
-                f.write('PO\tA\tC\tG\tT\n')
-                pfm = cluster.aligned_pfms[i, :, :]
-                for j in range(pfm.shape[0]):
-                    f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *pfm[j, :]))
-                f.write('XX\n//\n')
+        write_aligned_transfac(cluster, '{0}/cluster{1}/cluster{1}_aligned-motifs.transfac'.format(args.output_dest, c))
 
         # Write the consensus PFM to a TRANSFAC file
-        with open('{0}/cluster{1}/cluster{1}_consensus-pfm.transfac'.format(args.output_dest, c), 'w') as f:
-            f.write('AC\t{}\n'.format('cluster{}'.format(c)))
-            f.write('XX\n')
-            f.write('ID\t{}\n'.format('cluster{}'.format(c)))
-            f.write('PO\tA\tC\tG\tT\n')
-            trimmed_pfm, left, right, trimmed = trim_motif(cluster.aligned_pfms, args.info_thresh)
-            for j in range(trimmed_pfm.shape[0]):
-                f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *trimmed_pfm[j, :]))
-            f.write('XX\n//\n')
+        write_consensus_transfac(cluster, '{0}/cluster{1}/cluster{1}_consensus-pfm.transfac'.format(args.output_dest, c),
+                                 info_thresh=args.info_thresh)
 
         # Plot the aligned PFMs as an SVG
         svg = plot_logo_stack(cluster.aligned_pfms)
