@@ -3,7 +3,7 @@ import os
 from engine import GreedyEngine
 from utils import filter_motifs, trim_motif
 from input import parse_meme_files
-from output import write_aligned_transfac, write_consensus_transfac, write_consensus_meme, plot_logo_stack
+from output import write_aligned_transfac, write_consensus_transfac, write_consensus_meme, plot_logo_stack, write_bed_file
 import argparse
 
 if __name__ == '__main__':
@@ -78,3 +78,7 @@ if __name__ == '__main__':
         svg = plot_logo_stack(np.expand_dims(trimmed_pfm, axis=0))
         with open('{0}/cluster{1}/cluster{1}_consensus-motif.svg'.format(args.output_dest, c), 'w') as f:
             svg.writexml(f, addindent='\t', newl='\n')
+
+        if args.get_sites:
+            # Write the binding sites to a BED file
+            write_bed_file(cluster, '{0}/cluster{1}/cluster{1}_binding-sites.bed'.format(args.output_dest, c))

@@ -124,3 +124,8 @@ def plot_logo_stack(aligned_pfms, symbol=DNASymbol, glyph_width=100, stack_heigh
                 glyph.setAttribute('transform', 'matrix({} 0 0 {} 0 {})'.format(glyph_width / 100., heights[j] / 100., stack_height - y_offset))
 
     return svg
+
+def write_bed_file(cluster, filename):
+    with open(filename, 'w') as f:
+        for (chrom, start, end, strand), sources in cluster.sites.items():
+            f.write('{}\t{}\t{}\t{}\t.\t{}\n'.format(chrom, start, end, ';'.join(sources), strand))
