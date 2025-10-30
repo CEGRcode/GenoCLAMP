@@ -20,7 +20,7 @@ if __name__ == '__main__':
     parser.add_argument('--min-information-overlap', type=float, default=0., help='Minimum information overlap for merging')
     parser.add_argument('--max-information-overhang', type=float, default=12., help='Maximum information overhang for merging')
     parser.add_argument('--concentration', type=float, default=.5, help='Concentration parameter for merging')
-    parser.add_argument('--n-processes', type=int, default=None, help='Number of processes to use for parallelization')
+    parser.add_argument('--n-workers', type=int, default=None, help='Number of workers to use for parallelization')
     parser.add_argument('--info-thresh', type=float, default=.5, help='Information threshold for trimming motifs')
     parser.add_argument('--get-sites', action='store_true', help='Whether to extract binding sites from MEME files')
     parser.add_argument('--output-dest', '-o', default='clamp_out', help='Folder to save results, will be created if it does not exist')
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     engine = GreedyEngine(items, pc=args.pc, min_base_overlap=args.min_base_overlap,
         min_information_overlap=args.min_information_overlap,
         max_information_overhang=args.max_information_overhang, concentration=args.concentration)
-    engine.cluster_motifs(n_processes=args.n_processes)
+    engine.cluster_motifs(n_workers=args.n_workers)
 
     maximal_clusters = engine.clusters_trace[np.argmax(engine.llr_trace)]
     for c in maximal_clusters:
@@ -75,7 +75,7 @@ if __name__ == '__main__':
             f.write('XX\n')
             f.write('ID\t{}\n'.format('cluster{}'.format(c)))
             f.write('PO\tA\tC\tG\tT\n')
-            trimmed_pfm = trim_motif(cluster.aligned_pfms, args.info_thresh)
+            trimmed_pfm, left, right, trimmed = trim_motif(cluster.aligned_pfms, args.info_thresh)
             for j in range(trimmed_pfm.shape[0]):
                 f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *trimmed_pfm[j, :]))
             f.write('XX\n//\n')
