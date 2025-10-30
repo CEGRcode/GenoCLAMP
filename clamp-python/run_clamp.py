@@ -36,9 +36,6 @@ if __name__ == '__main__':
             meme_files = [line.strip() for line in f.read().strip().split('\n')]
     else:
         parser.error('Either --meme or --meme-list must be specified')
-
-    if not os.path.exists(args.output_dest):
-        os.makedirs(args.output_dest)
     
     items, sources, sites = parse_meme_files(meme_files, get_sites=args.get_sites)
     items = filter_motifs(items, nsites_thresh=args.nsites_thresh, evalue_thresh=args.evalue_thresh,
@@ -48,6 +45,9 @@ if __name__ == '__main__':
         min_information_overlap=args.min_information_overlap,
         max_information_overhang=args.max_information_overhang, concentration=args.concentration)
     engine.cluster_motifs(n_workers=args.n_workers)
+
+    if not os.path.exists(args.output_dest):
+        os.makedirs(args.output_dest)
 
     maximal_clusters = engine.clusters_trace[np.argmax(engine.llr_trace)]
     for c in maximal_clusters:
