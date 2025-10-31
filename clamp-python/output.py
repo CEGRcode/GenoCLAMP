@@ -12,7 +12,7 @@ def write_aligned_transfac(cluster, filename):
             f.write('AC\t{}\n'.format(motif_id))
             f.write('XX\n')
             f.write('ID\t{}\n'.format(motif_id))
-            f.write('PO\tA\tC\tG\tT\n')
+            f.write('P0\tA\tC\tG\tT\n')
             pfm = cluster.aligned_pfms[i, :, :]
             for j in range(pfm.shape[0]):
                 f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *pfm[j, :]))
@@ -25,7 +25,7 @@ def write_consensus_transfac(cluster, filename, info_thresh=.5):
         f.write('AC\t{}\n'.format('cluster{}'.format(c)))
         f.write('XX\n')
         f.write('ID\t{}\n'.format('cluster{}'.format(c)))
-        f.write('PO\tA\tC\tG\tT\n')
+        f.write('P0\tA\tC\tG\tT\n')
         for j in range(trimmed_pfm.shape[0]):
             f.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(j + 1, *trimmed_pfm[j, :]))
         f.write('XX\n//\n')
