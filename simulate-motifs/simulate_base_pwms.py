@@ -84,7 +84,7 @@ def write_pwm(motif_id, pwm, out_fh, period=None):
     out_fh.write('AC\t{}\n'.format(motif_id))
     out_fh.write('XX\n')
     out_fh.write('ID\t{}\n'.format(motif_id))
-    out_fh.write('PO	A	C	G	T\n')
+    out_fh.write('P0	A	C	G	T\n')
     for i in range(pwm.shape[0]):
         out_fh.write('{:02d}\t{:06f}\t{:06f}\t{:06f}\t{:06f}\n'.format(i + 1, *pwm[i, :]))
     out_fh.write('XX\n')

@@ -1,7 +1,7 @@
 AC	motif1-1
 XX
 ID	motif1-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	21	2	0	7
 02	19	1	1	9
 03	0	19	11	0
@@ -18,7 +18,7 @@ XX
 AC	motif1-2
 XX
 ID	motif1-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	14	11	1	30
 02	16	0	0	40
 03	2	2	10	42
@@ -36,7 +36,7 @@ XX
 AC	motif1-3
 XX
 ID	motif1-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	65	1	3	30
 02	73	6	0	20
 03	4	51	44	0
@@ -53,7 +53,7 @@ XX
 AC	motif1-4
 XX
 ID	motif1-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	20	9	0
 02	7	4	9	10
 03	5	3	5	17
@@ -68,7 +68,7 @@ XX
 AC	motif1-5
 XX
 ID	motif1-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	13	0	25
 02	17	0	0	34
 03	3	0	6	42
@@ -85,7 +85,7 @@ XX
 AC	motif1-6
 XX
 ID	motif1-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	39	4	1	8
 02	2	32	18	0
 03	15	8	17	12
@@ -100,7 +100,7 @@ XX
 AC	motif1-7
 XX
 ID	motif1-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	20	25	1	47
 02	23	0	1	69
 03	10	0	19	64
@@ -116,7 +116,7 @@ XX
 AC	motif2-1
 XX
 ID	motif2-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	21	4	1	10
 02	0	0	36	0
 03	8	12	10	6
@@ -131,7 +131,7 @@ XX
 AC	motif2-2
 XX
 ID	motif2-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	34	3	0	1
 02	0	38	0	0
 03	3	16	11	8
@@ -147,7 +147,7 @@ XX
 AC	motif2-3
 XX
 ID	motif2-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	70	14	0	3
 02	0	87	0	0
 03	7	37	14	29
@@ -163,7 +163,7 @@ XX
 AC	motif2-4
 XX
 ID	motif2-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	85	0	0	1
 02	47	15	4	20
 03	0	0	86	0
@@ -179,7 +179,7 @@ XX
 AC	motif2-5
 XX
 ID	motif2-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	80	12	0	6
 02	0	98	0	0
 03	13	32	34	19
@@ -195,7 +195,7 @@ XX
 AC	motif2-6
 XX
 ID	motif2-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	14	19	29	27
 02	22	21	21	25
 03	22	26	20	21
@@ -222,7 +222,7 @@ XX
 AC	motif2-7
 XX
 ID	motif2-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	87	0	0	0
 02	44	17	1	25
 03	0	0	87	0
@@ -248,7 +248,7 @@ XX
 AC	motif3-1
 XX
 ID	motif3-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	25	2	0	48
 02	0	0	0	75
 03	0	0	0	75
@@ -278,7 +278,7 @@ XX
 AC	motif3-2
 XX
 ID	motif3-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	12	8	14	22
 02	4	39	10	3
 03	35	0	5	16
@@ -312,7 +312,7 @@ XX
 AC	motif3-3
 XX
 ID	motif3-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	10	0	0	22
 02	0	0	0	32
 03	0	0	0	32
@@ -343,7 +343,7 @@ XX
 AC	motif3-4
 XX
 ID	motif3-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	18	2	0	27
 02	0	0	0	47
 03	0	0	0	47
@@ -374,7 +374,7 @@ XX
 AC	motif3-5
 XX
 ID	motif3-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	0	0	17
 02	0	0	0	25
 03	0	0	0	25
@@ -407,7 +407,7 @@ XX
 AC	motif3-6
 XX
 ID	motif3-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	16	46	13	23
 02	32	22	19	25
 03	24	11	19	44
@@ -443,7 +443,7 @@ XX
 AC	motif3-7
 XX
 ID	motif3-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	75
 02	0	0	0	75
 03	75	0	0	0
@@ -473,7 +473,7 @@ XX
 AC	motif4-1
 XX
 ID	motif4-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	0	0	0
 02	7	7	7	7
 03	9	19	0	0
@@ -506,7 +506,7 @@ XX
 AC	motif4-2
 XX
 ID	motif4-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	39	0	0	0
 02	5	7	12	15
 03	13	23	0	3
@@ -539,7 +539,7 @@ XX
 AC	motif5-1
 XX
 ID	motif5-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	23	0	0
 02	12	3	5	3
 03	0	9	5	9
@@ -573,7 +573,7 @@ XX
 AC	motif5-2
 XX
 ID	motif5-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	29	0	22	1
 02	39	8	0	5
 03	0	0	52	0
@@ -609,7 +609,7 @@ XX
 AC	motif5-3
 XX
 ID	motif5-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	25	0	0
 02	9	4	5	7
 03	1	7	5	12
@@ -644,7 +644,7 @@ XX
 AC	motif5-4
 XX
 ID	motif5-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	63	0
 02	0	0	0	63
 03	18	10	15	20
@@ -678,7 +678,7 @@ XX
 AC	motif5-5
 XX
 ID	motif5-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	24	0	36	6
 02	46	9	0	11
 03	0	0	66	0
@@ -714,7 +714,7 @@ XX
 AC	motif5-6
 XX
 ID	motif5-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	0	43	4
 02	55	10	0	10
 03	0	0	75	0
@@ -750,7 +750,7 @@ XX
 AC	motif6-1
 XX
 ID	motif6-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	48	0
 02	1	16	20	11
 03	0	48	0	0
@@ -779,7 +779,7 @@ XX
 AC	motif6-2
 XX
 ID	motif6-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	64	21	0	0
 02	24	39	11	11
 03	23	38	9	15
@@ -808,7 +808,7 @@ XX
 AC	motif6-3
 XX
 ID	motif6-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	18	0	0	11
 02	29	0	0	0
 03	0	0	0	29
@@ -834,7 +834,7 @@ XX
 AC	motif6-4
 XX
 ID	motif6-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	93	0
 02	4	24	34	31
 03	0	93	0	0
@@ -860,7 +860,7 @@ XX
 AC	motif6-5
 XX
 ID	motif6-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	15	0	0	5
 02	20	0	0	0
 03	0	0	0	20
@@ -886,7 +886,7 @@ XX
 AC	motif6-6
 XX
 ID	motif6-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	30	0
 02	1	12	11	6
 03	0	30	0	0
@@ -915,7 +915,7 @@ XX
 AC	motif6-7
 XX
 ID	motif6-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	27	9	0	0
 02	15	13	4	4
 03	5	22	2	7
@@ -944,7 +944,7 @@ XX
 AC	motif6-8
 XX
 ID	motif6-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	67	0
 02	3	19	22	23
 03	0	67	0	0
@@ -970,7 +970,7 @@ XX
 AC	motif7-1
 XX
 ID	motif7-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	60	0	0	0
 02	33	8	5	14
 03	17	12	24	7
@@ -1005,7 +1005,7 @@ XX
 AC	motif7-2
 XX
 ID	motif7-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	48	0	0
 02	24	0	13	11
 03	0	34	5	9
@@ -1041,7 +1041,7 @@ XX
 AC	motif7-3
 XX
 ID	motif7-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	57	0	0	0
 02	40	4	5	8
 03	13	11	29	4
@@ -1076,7 +1076,7 @@ XX
 AC	motif8-1
 XX
 ID	motif8-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	25	0	6
 02	0	0	31	0
 03	0	13	18	0
@@ -1097,7 +1097,7 @@ XX
 AC	motif8-2
 XX
 ID	motif8-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	57	0
 02	8	44	5	0
 03	0	57	0	0
@@ -1117,7 +1117,7 @@ XX
 AC	motif8-3
 XX
 ID	motif8-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	37	21	8	13
 02	0	36	43	0
 03	31	6	0	42
@@ -1141,7 +1141,7 @@ XX
 AC	motif8-4
 XX
 ID	motif8-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	40	0
 02	4	31	5	0
 03	0	40	0	0
@@ -1161,7 +1161,7 @@ XX
 AC	motif9-1
 XX
 ID	motif9-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	54
 02	48	0	6	0
 03	3	21	13	17
@@ -1183,7 +1183,7 @@ XX
 AC	motif9-2
 XX
 ID	motif9-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	1	36	13
 02	30	12	10	3
 03	0	0	0	55
@@ -1207,7 +1207,7 @@ XX
 AC	motif9-3
 XX
 ID	motif9-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	75
 02	59	3	12	1
 03	5	31	12	27
@@ -1229,7 +1229,7 @@ XX
 AC	motif9-4
 XX
 ID	motif9-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	40	0	0	0
 02	11	13	6	10
 03	10	15	7	8
@@ -1251,7 +1251,7 @@ XX
 AC	motif9-5
 XX
 ID	motif9-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	16	4	6	7
 02	9	5	3	16
 03	3	1	21	8
@@ -1277,7 +1277,7 @@ XX
 AC	motif9-6
 XX
 ID	motif9-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	17	10	9	4
 02	10	15	8	7
 03	4	2	27	7
@@ -1303,7 +1303,7 @@ XX
 AC	motif9-7
 XX
 ID	motif9-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	73
 02	57	0	14	2
 03	0	40	8	25
@@ -1325,7 +1325,7 @@ XX
 AC	motif10-1
 XX
 ID	motif10-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	10	1	15
 02	7	1	10	8
 03	26	0	0	0
@@ -1358,7 +1358,7 @@ XX
 AC	motif10-2
 XX
 ID	motif10-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	43	0	0	0
 02	24	9	6	4
 03	0	43	0	0
@@ -1389,7 +1389,7 @@ XX
 AC	motif10-3
 XX
 ID	motif10-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	82	0	0
 02	0	78	0	4
 03	4	38	16	24
@@ -1422,7 +1422,7 @@ XX
 AC	motif10-4
 XX
 ID	motif10-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	58	0	0	0
 02	22	21	4	11
 03	0	58	0	0
@@ -1453,7 +1453,7 @@ XX
 AC	motif10-5
 XX
 ID	motif10-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	80	0	0	0
 02	25	32	6	17
 03	0	80	0	0
@@ -1485,7 +1485,7 @@ XX
 AC	motif10-6
 XX
 ID	motif10-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	51	6	18
 02	0	83	0	0
 03	0	79	0	4
@@ -1519,7 +1519,7 @@ XX
 AC	motif10-7
 XX
 ID	motif10-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	95	0	0
 02	0	89	0	6
 03	4	48	21	22
@@ -1550,7 +1550,7 @@ XX
 AC	motif11-1
 XX
 ID	motif11-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	7	52	2
 02	16	14	22	9
 03	11	50	0	0
@@ -1568,7 +1568,7 @@ XX
 AC	motif11-2
 XX
 ID	motif11-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	20	3	6
 02	0	2	40	0
 03	14	10	12	6
@@ -1585,7 +1585,7 @@ XX
 AC	motif11-3
 XX
 ID	motif11-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	23	0	0	0
 02	1	1	6	15
 03	7	0	8	8
@@ -1602,7 +1602,7 @@ XX
 AC	motif12-1
 XX
 ID	motif12-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	19	8
 02	10	2	3	12
 03	5	6	6	10
@@ -1623,7 +1623,7 @@ XX
 AC	motif12-2
 XX
 ID	motif12-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	39	0
 02	10	7	13	9
 03	0	0	0	39
@@ -1640,7 +1640,7 @@ XX
 AC	motif12-3
 XX
 ID	motif12-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	21	53	8
 02	0	0	82	0
 03	82	0	0	0
@@ -1658,7 +1658,7 @@ XX
 AC	motif12-4
 XX
 ID	motif12-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	4	22	4
 02	0	0	30	0
 03	30	0	0	0
@@ -1681,7 +1681,7 @@ XX
 AC	motif12-5
 XX
 ID	motif12-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	93	0
 02	93	0	0	0
 03	15	32	33	13
@@ -1698,7 +1698,7 @@ XX
 AC	motif12-6
 XX
 ID	motif12-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	18	11
 02	9	5	2	13
 03	13	5	5	6
@@ -1720,7 +1720,7 @@ XX
 AC	motif13-1
 XX
 ID	motif13-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	27	14	0	5
 02	12	12	8	14
 03	12	12	14	8
@@ -1737,7 +1737,7 @@ XX
 AC	motif13-2
 XX
 ID	motif13-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	54	0	0	0
 02	0	54	0	0
 03	32	14	3	5
@@ -1752,7 +1752,7 @@ XX
 AC	motif13-3
 XX
 ID	motif13-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	61	16	0	12
 02	20	28	13	28
 03	29	17	32	11
@@ -1769,7 +1769,7 @@ XX
 AC	motif13-4
 XX
 ID	motif13-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	39	0	0	0
 02	0	39	0	0
 03	27	5	3	4
@@ -1786,7 +1786,7 @@ XX
 AC	motif13-5
 XX
 ID	motif13-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	6	5	5
 02	5	4	9	2
 03	3	10	3	4
@@ -1812,7 +1812,7 @@ XX
 AC	motif14-1
 XX
 ID	motif14-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	84	0
 02	48	1	35	0
 03	1	4	44	35
@@ -1839,7 +1839,7 @@ XX
 AC	motif14-2
 XX
 ID	motif14-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	76	0
 02	36	0	40	0
 03	2	2	45	27
@@ -1866,7 +1866,7 @@ XX
 AC	motif14-3
 XX
 ID	motif14-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	59	0
 02	29	0	30	0
 03	1	0	39	19
@@ -1889,7 +1889,7 @@ XX
 AC	motif14-4
 XX
 ID	motif14-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	23	39	0
 02	27	0	20	15
 03	12	12	33	5
@@ -1916,7 +1916,7 @@ XX
 AC	motif14-5
 XX
 ID	motif14-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	66	0
 02	22	0	44	0
 03	3	0	34	29
@@ -1943,7 +1943,7 @@ XX
 AC	motif14-6
 XX
 ID	motif14-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	51	0
 02	26	0	25	0
 03	2	1	28	20
@@ -1968,7 +1968,7 @@ XX
 AC	motif14-7
 XX
 ID	motif14-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	20	0
 02	14	0	6	0
 03	1	1	12	6
@@ -1995,7 +1995,7 @@ XX
 AC	motif14-8
 XX
 ID	motif14-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	74	0
 02	39	0	35	0
 03	4	1	43	26
@@ -2022,7 +2022,7 @@ XX
 AC	motif15-1
 XX
 ID	motif15-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	30	5	7	0
 02	0	42	0	0
 03	17	0	3	22
@@ -2061,7 +2061,7 @@ XX
 AC	motif15-2
 XX
 ID	motif15-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	20	1	12
 02	0	33	0	0
 03	10	9	1	13
@@ -2099,7 +2099,7 @@ XX
 AC	motif15-3
 XX
 ID	motif15-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	24	0	58
 02	0	62	0	20
 03	0	82	0	0
@@ -2138,7 +2138,7 @@ XX
 AC	motif15-4
 XX
 ID	motif15-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	38	0	0
 02	10	18	2	8
 03	2	0	0	36
@@ -2174,7 +2174,7 @@ XX
 AC	motif15-5
 XX
 ID	motif15-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	5	4	0
 02	0	37	0	0
 03	10	1	5	21
@@ -2214,7 +2214,7 @@ XX
 AC	motif16-1
 XX
 ID	motif16-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	65	0	0	0
 02	21	29	10	5
 03	0	0	65	0
@@ -2232,7 +2232,7 @@ XX
 AC	motif16-2
 XX
 ID	motif16-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	22	0	0	0
 02	7	9	6	0
 03	0	0	22	0
@@ -2250,7 +2250,7 @@ XX
 AC	motif16-3
 XX
 ID	motif16-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	34	28	16	22
 02	32	28	22	18
 03	20	22	32	26
@@ -2276,7 +2276,7 @@ XX
 AC	motif16-4
 XX
 ID	motif16-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	55	0	0	0
 02	21	22	10	2
 03	0	0	55	0
@@ -2294,7 +2294,7 @@ XX
 AC	motif16-5
 XX
 ID	motif16-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	54	0	0	0
 02	16	19	10	9
 03	0	0	54	0
@@ -2309,7 +2309,7 @@ XX
 AC	motif17-1
 XX
 ID	motif17-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	19	45	1
 02	0	0	0	65
 03	17	12	23	13
@@ -2329,7 +2329,7 @@ XX
 AC	motif17-2
 XX
 ID	motif17-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	33	0	0	0
 02	0	0	33	0
 03	16	13	0	4
@@ -2350,7 +2350,7 @@ XX
 AC	motif17-3
 XX
 ID	motif17-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	45	20	4
 02	11	20	23	18
 03	18	31	11	12
@@ -2372,7 +2372,7 @@ XX
 AC	motif17-4
 XX
 ID	motif17-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	25	65	0
 02	0	0	0	90
 03	30	23	21	16
@@ -2395,7 +2395,7 @@ XX
 AC	motif17-5
 XX
 ID	motif17-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	27
 02	5	7	9	6
 03	0	0	0	27
@@ -2417,7 +2417,7 @@ XX
 AC	motif18-1
 XX
 ID	motif18-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	51	0
 02	4	2	8	37
 03	0	0	51	0
@@ -2443,7 +2443,7 @@ XX
 AC	motif18-2
 XX
 ID	motif18-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	66	0
 02	5	1	15	45
 03	0	0	66	0
@@ -2469,7 +2469,7 @@ XX
 AC	motif18-3
 XX
 ID	motif18-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	39	8
 02	14	18	0	15
 03	0	9	0	38
@@ -2495,7 +2495,7 @@ XX
 AC	motif19-1
 XX
 ID	motif19-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	83	5	0	0
 02	88	0	0	0
 03	88	0	0	0
@@ -2530,7 +2530,7 @@ XX
 AC	motif19-2
 XX
 ID	motif19-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	46	4	0	0
 02	50	0	0	0
 03	50	0	0	0
@@ -2564,7 +2564,7 @@ XX
 AC	motif19-3
 XX
 ID	motif19-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	55	4	0	0
 02	58	0	0	1
 03	59	0	0	0
@@ -2597,7 +2597,7 @@ XX
 AC	motif19-4
 XX
 ID	motif19-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	46	11	13	20
 02	18	34	32	6
 03	57	19	14	0
@@ -2633,7 +2633,7 @@ XX
 AC	motif19-5
 XX
 ID	motif19-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	46	5	0	0
 02	51	0	0	0
 03	51	0	0	0
@@ -2667,7 +2667,7 @@ XX
 AC	motif19-6
 XX
 ID	motif19-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	74	0
 02	62	0	2	10
 03	14	0	1	59
@@ -2700,7 +2700,7 @@ XX
 AC	motif19-7
 XX
 ID	motif19-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	55	4	0	0
 02	59	0	0	0
 03	59	0	0	0
@@ -2733,7 +2733,7 @@ XX
 AC	motif19-8
 XX
 ID	motif19-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	29	9	0	0
 02	37	0	0	1
 03	38	0	0	0
@@ -2766,7 +2766,7 @@ XX
 AC	motif19-9
 XX
 ID	motif19-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	82	3	0	0
 02	85	0	0	0
 03	85	0	0	0
@@ -2800,7 +2800,7 @@ XX
 AC	motif20-1
 XX
 ID	motif20-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	76	18	0
 02	0	0	0	94
 03	11	0	0	83
@@ -2816,7 +2816,7 @@ XX
 AC	motif20-2
 XX
 ID	motif20-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	45	10	0
 02	1	0	0	54
 03	5	0	0	50
@@ -2835,7 +2835,7 @@ XX
 AC	motif20-3
 XX
 ID	motif20-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	70	20	0
 02	0	0	0	90
 03	16	0	0	74
@@ -2849,7 +2849,7 @@ XX
 AC	motif21-1
 XX
 ID	motif21-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	33	0	0
 02	0	16	4	13
 03	33	0	0	0
@@ -2876,7 +2876,7 @@ XX
 AC	motif21-2
 XX
 ID	motif21-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	100	0	0	0
 02	0	0	100	0
 03	100	0	0	0
@@ -2904,7 +2904,7 @@ XX
 AC	motif21-3
 XX
 ID	motif21-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	57	0	0
 02	0	22	10	25
 03	57	0	0	0
@@ -2931,7 +2931,7 @@ XX
 AC	motif21-4
 XX
 ID	motif21-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	0	61	7
 02	0	72	0	0
 03	0	29	7	36
@@ -2959,7 +2959,7 @@ XX
 AC	motif21-5
 XX
 ID	motif21-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	29	0	0	0
 02	0	0	29	0
 03	29	0	0	0
@@ -2987,7 +2987,7 @@ XX
 AC	motif21-6
 XX
 ID	motif21-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	53	0	0	0
 02	0	0	53	0
 03	53	0	0	0
@@ -3015,7 +3015,7 @@ XX
 AC	motif21-7
 XX
 ID	motif21-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	0	59	9
 02	0	71	0	0
 03	0	34	5	32
@@ -3043,7 +3043,7 @@ XX
 AC	motif22-1
 XX
 ID	motif22-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	86	0	1
 02	21	26	18	23
 03	0	0	0	88
@@ -3063,7 +3063,7 @@ XX
 AC	motif22-2
 XX
 ID	motif22-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	10	82	0
 02	89	3	0	0
 03	0	0	0	92
@@ -3082,7 +3082,7 @@ XX
 AC	motif22-3
 XX
 ID	motif22-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	1	1	0
 02	0	0	0	30
 03	0	0	2	28
@@ -3100,7 +3100,7 @@ XX
 AC	motif22-4
 XX
 ID	motif22-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	26	1	2
 02	11	5	6	8
 03	0	0	0	30
@@ -3121,7 +3121,7 @@ XX
 AC	motif22-5
 XX
 ID	motif22-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	81
 02	20	13	28	20
 03	23	42	11	5
@@ -3140,7 +3140,7 @@ XX
 AC	motif22-6
 XX
 ID	motif22-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	47
 02	15	3	18	11
 03	6	31	7	3
@@ -3157,7 +3157,7 @@ XX
 AC	motif23-1
 XX
 ID	motif23-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	46	0	5	0
 02	0	51	0	0
 03	0	34	4	13
@@ -3171,7 +3171,7 @@ XX
 AC	motif23-2
 XX
 ID	motif23-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	47	0
 02	40	3	5	0
 03	0	48	0	0
@@ -3187,7 +3187,7 @@ XX
 AC	motif24-1
 XX
 ID	motif24-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	92	0	0	0
 02	0	0	92	0
 03	21	14	27	30
@@ -3217,7 +3217,7 @@ XX
 AC	motif24-2
 XX
 ID	motif24-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	76	0
 02	0	0	76	0
 03	0	75	0	1
@@ -3247,7 +3247,7 @@ XX
 AC	motif24-3
 XX
 ID	motif24-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	5	0	17
 02	22	0	0	0
 03	0	0	22	0
@@ -3281,7 +3281,7 @@ XX
 AC	motif24-4
 XX
 ID	motif24-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	27	0	0	0
 02	0	0	27	0
 03	9	8	4	6
@@ -3314,7 +3314,7 @@ XX
 AC	motif24-5
 XX
 ID	motif24-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	50	0
 02	0	0	50	0
 03	0	50	0	0
@@ -3345,7 +3345,7 @@ XX
 AC	motif25-1
 XX
 ID	motif25-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	97
 02	0	0	97	0
 03	24	26	27	20
@@ -3361,7 +3361,7 @@ XX
 AC	motif25-2
 XX
 ID	motif25-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	0	63
 02	0	0	64	0
 03	12	20	14	18
@@ -3377,7 +3377,7 @@ XX
 AC	motif25-3
 XX
 ID	motif25-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	44
 02	0	0	44	0
 03	9	15	10	10
@@ -3393,7 +3393,7 @@ XX
 AC	motif25-4
 XX
 ID	motif25-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	69	0	0	0
 02	0	69	0	0
 03	1	9	45	14
@@ -3409,7 +3409,7 @@ XX
 AC	motif25-5
 XX
 ID	motif25-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	77
 02	0	0	77	0
 03	14	26	21	16
@@ -3425,7 +3425,7 @@ XX
 AC	motif25-6
 XX
 ID	motif25-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	21
 02	0	0	21	0
 03	4	4	7	6
@@ -3442,7 +3442,7 @@ XX
 AC	motif25-7
 XX
 ID	motif25-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	14	19	14	28
 02	75	0	0	0
 03	0	75	0	0
@@ -3459,7 +3459,7 @@ XX
 AC	motif25-8
 XX
 ID	motif25-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	29	0
 02	11	8	5	5
 03	4	15	9	1
@@ -3474,7 +3474,7 @@ XX
 AC	motif25-9
 XX
 ID	motif25-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	53	0	0	0
 02	0	52	1	0
 03	1	9	33	10
@@ -3490,7 +3490,7 @@ XX
 AC	motif26-1
 XX
 ID	motif26-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	90	0	0	0
 02	57	25	0	8
 03	0	82	0	8
@@ -3511,7 +3511,7 @@ XX
 AC	motif26-2
 XX
 ID	motif26-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	81	0	0	0
 02	59	19	0	3
 03	0	71	0	10
@@ -3530,7 +3530,7 @@ XX
 AC	motif26-3
 XX
 ID	motif26-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	59	21
 02	19	16	13	32
 03	80	0	0	0
@@ -3551,7 +3551,7 @@ XX
 AC	motif26-4
 XX
 ID	motif26-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	66	0	0	0
 02	48	18	0	0
 03	0	60	0	6
@@ -3570,7 +3570,7 @@ XX
 AC	motif27-1
 XX
 ID	motif27-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	34	21
 02	24	15	9	7
 03	55	0	0	0
@@ -3596,7 +3596,7 @@ XX
 AC	motif27-2
 XX
 ID	motif27-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	44	0	0	0
 02	6	24	3	11
 03	1	2	5	36
@@ -3621,7 +3621,7 @@ XX
 AC	motif27-3
 XX
 ID	motif27-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	0	27	0
 02	34	0	0	0
 03	6	16	5	7
@@ -3649,7 +3649,7 @@ XX
 AC	motif27-4
 XX
 ID	motif27-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	55	0	26
 02	19	15	7	40
 03	0	0	52	29
@@ -3677,7 +3677,7 @@ XX
 AC	motif27-5
 XX
 ID	motif27-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	12	0	83	0
 02	95	0	0	0
 03	22	38	12	23
@@ -3705,7 +3705,7 @@ XX
 AC	motif27-6
 XX
 ID	motif27-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	55	0	0	0
 02	7	28	9	11
 03	3	0	9	43
@@ -3733,7 +3733,7 @@ XX
 AC	motif27-7
 XX
 ID	motif27-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	0	60	0
 02	68	0	0	0
 03	17	23	11	17
@@ -3757,7 +3757,7 @@ XX
 AC	motif27-8
 XX
 ID	motif27-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	41	0	0	0
 02	5	2	28	6
 03	18	1	9	13
@@ -3781,7 +3781,7 @@ XX
 AC	motif27-9
 XX
 ID	motif27-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	93	0	0	0
 02	15	44	16	18
 03	3	1	12	77
@@ -3806,7 +3806,7 @@ XX
 AC	motif28-1
 XX
 ID	motif28-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	34	0	0
 02	2	12	7	13
 03	0	22	11	1
@@ -3831,7 +3831,7 @@ XX
 AC	motif28-2
 XX
 ID	motif28-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	6	0	50	26
 02	0	16	49	17
 03	0	82	0	0
@@ -3855,7 +3855,7 @@ XX
 AC	motif28-3
 XX
 ID	motif28-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	86	0	0
 02	2	43	25	16
 03	0	86	0	0
@@ -3879,7 +3879,7 @@ XX
 AC	motif28-4
 XX
 ID	motif28-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	54	36
 02	0	14	63	13
 03	0	90	0	0
@@ -3904,7 +3904,7 @@ XX
 AC	motif29-1
 XX
 ID	motif29-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	52	1	0	4
 02	0	57	0	0
 03	0	57	0	0
@@ -3919,7 +3919,7 @@ XX
 AC	motif29-2
 XX
 ID	motif29-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	10	0	26	0
 02	35	1	0	0
 03	0	36	0	0
@@ -3936,7 +3936,7 @@ XX
 AC	motif29-3
 XX
 ID	motif29-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	84	0
 02	0	0	84	0
 03	9	0	1	74
@@ -3950,7 +3950,7 @@ XX
 AC	motif29-4
 XX
 ID	motif29-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	0	0	22
 02	5	12	5	5
 03	0	0	27	0
@@ -3966,7 +3966,7 @@ XX
 AC	motif30-1
 XX
 ID	motif30-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	33
 02	12	11	1	9
 03	33	0	0	0
@@ -4005,7 +4005,7 @@ XX
 AC	motif30-2
 XX
 ID	motif30-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	25
 02	9	6	5	5
 03	25	0	0	0
@@ -4044,7 +4044,7 @@ XX
 AC	motif30-3
 XX
 ID	motif30-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	81
 02	30	29	9	13
 03	81	0	0	0
@@ -4083,7 +4083,7 @@ XX
 AC	motif31-1
 XX
 ID	motif31-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	98	0	0
 02	0	2	0	96
 03	0	0	0	98
@@ -4117,7 +4117,7 @@ XX
 AC	motif32-1
 XX
 ID	motif32-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	90	0
 02	31	12	18	29
 03	0	4	0	86
@@ -4156,7 +4156,7 @@ XX
 AC	motif32-2
 XX
 ID	motif32-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	17	14	1
 02	0	0	32	0
 03	8	7	12	5
@@ -4196,7 +4196,7 @@ XX
 AC	motif32-3
 XX
 ID	motif32-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	43	33	3
 02	0	0	80	0
 03	23	18	22	17
@@ -4235,7 +4235,7 @@ XX
 AC	motif32-4
 XX
 ID	motif32-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	12	16	46
 02	0	87	0	0
 03	0	0	0	87
@@ -4274,7 +4274,7 @@ XX
 AC	motif32-5
 XX
 ID	motif32-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	48	0
 02	14	8	14	12
 03	0	3	0	45
@@ -4312,7 +4312,7 @@ XX
 AC	motif32-6
 XX
 ID	motif32-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	34	34	1
 02	0	0	71	0
 03	19	14	20	18
@@ -4351,7 +4351,7 @@ XX
 AC	motif32-7
 XX
 ID	motif32-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	9	7	5	27
 02	0	48	0	0
 03	0	0	0	48
@@ -4390,7 +4390,7 @@ XX
 AC	motif32-8
 XX
 ID	motif32-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	26	0
 02	8	1	5	12
 03	0	0	0	26
@@ -4428,7 +4428,7 @@ XX
 AC	motif33-1
 XX
 ID	motif33-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	77
 02	20	28	15	14
 03	7	0	46	24
@@ -4445,7 +4445,7 @@ XX
 AC	motif33-2
 XX
 ID	motif33-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	25
 02	3	8	7	7
 03	2	0	17	6
@@ -4462,7 +4462,7 @@ XX
 AC	motif33-3
 XX
 ID	motif33-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	68
 02	17	30	1	20
 03	68	0	0	0
@@ -4479,7 +4479,7 @@ XX
 AC	motif33-4
 XX
 ID	motif33-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	93
 02	24	31	15	23
 03	8	1	62	22
@@ -4496,7 +4496,7 @@ XX
 AC	motif33-5
 XX
 ID	motif33-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	52
 02	13	16	0	23
 03	52	0	0	0
@@ -4513,7 +4513,7 @@ XX
 AC	motif33-6
 XX
 ID	motif33-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	80
 02	26	22	0	32
 03	80	0	0	0
@@ -4530,7 +4530,7 @@ XX
 AC	motif34-1
 XX
 ID	motif34-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	41	0	0
 02	9	5	19	8
 03	27	2	11	1
@@ -4561,7 +4561,7 @@ XX
 AC	motif34-2
 XX
 ID	motif34-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	77	0	0
 02	19	18	26	14
 03	63	0	14	0
@@ -4592,7 +4592,7 @@ XX
 AC	motif34-3
 XX
 ID	motif34-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	96	0	0
 02	25	22	34	15
 03	72	3	21	0
@@ -4623,7 +4623,7 @@ XX
 AC	motif34-4
 XX
 ID	motif34-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	34	0	1
 02	9	11	12	3
 03	24	2	9	0
@@ -4655,7 +4655,7 @@ XX
 AC	motif34-5
 XX
 ID	motif34-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	30	1	14	4
 02	17	12	20	0
 03	0	49	0	0
@@ -4688,7 +4688,7 @@ XX
 AC	motif35-1
 XX
 ID	motif35-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	0	0	18
 02	22	0	0	0
 03	9	5	2	6
@@ -4709,7 +4709,7 @@ XX
 AC	motif35-2
 XX
 ID	motif35-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	0	0	33
 02	36	0	0	0
 03	5	8	6	17
@@ -4730,7 +4730,7 @@ XX
 AC	motif35-3
 XX
 ID	motif35-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	90
 02	79	1	9	1
 03	0	0	0	90
@@ -4753,7 +4753,7 @@ XX
 AC	motif35-4
 XX
 ID	motif35-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	6	0	0	42
 02	48	0	0	0
 03	14	10	5	19
@@ -4774,7 +4774,7 @@ XX
 AC	motif35-5
 XX
 ID	motif35-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	26
 02	23	0	3	0
 03	0	0	0	26
@@ -4794,7 +4794,7 @@ XX
 AC	motif36-1
 XX
 ID	motif36-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	50	0
 02	0	0	8	42
 03	12	13	13	12
@@ -4822,7 +4822,7 @@ XX
 AC	motif36-2
 XX
 ID	motif36-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	96
 02	0	18	46	32
 03	15	29	36	16
@@ -4850,7 +4850,7 @@ XX
 AC	motif36-3
 XX
 ID	motif36-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	96
 02	0	17	42	37
 03	11	26	42	17
@@ -4878,7 +4878,7 @@ XX
 AC	motif36-4
 XX
 ID	motif36-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	74
 02	0	15	36	23
 03	11	18	31	14
@@ -4906,7 +4906,7 @@ XX
 AC	motif36-5
 XX
 ID	motif36-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	91
 02	0	11	41	39
 03	11	30	37	13
@@ -4934,7 +4934,7 @@ XX
 AC	motif37-1
 XX
 ID	motif37-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	22	0	1	0
 02	3	5	6	9
 03	3	6	14	0
@@ -4972,7 +4972,7 @@ XX
 AC	motif37-2
 XX
 ID	motif37-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	99	0	0	0
 02	26	30	19	24
 03	11	9	60	19
@@ -5009,7 +5009,7 @@ XX
 AC	motif37-3
 XX
 ID	motif37-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	85	0	0	0
 02	27	26	9	23
 03	9	13	50	13
@@ -5046,7 +5046,7 @@ XX
 AC	motif37-4
 XX
 ID	motif37-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	59	0	0	0
 02	10	25	5	19
 03	5	13	35	6
@@ -5083,7 +5083,7 @@ XX
 AC	motif37-5
 XX
 ID	motif37-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	92	0	0	0
 02	12	38	15	27
 03	9	18	60	5
@@ -5120,7 +5120,7 @@ XX
 AC	motif37-6
 XX
 ID	motif37-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	52	0	0	0
 02	10	24	4	14
 03	7	10	30	5
@@ -5157,7 +5157,7 @@ XX
 AC	motif38-1
 XX
 ID	motif38-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	34	0	1	53
 02	36	4	27	21
 03	22	21	27	18
@@ -5179,7 +5179,7 @@ XX
 AC	motif38-2
 XX
 ID	motif38-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	40	0	0	0
 02	4	6	12	18
 03	0	0	40	0
@@ -5198,7 +5198,7 @@ XX
 AC	motif38-3
 XX
 ID	motif38-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	92	0
 02	0	3	0	89
 03	34	12	0	46
@@ -5220,7 +5220,7 @@ XX
 AC	motif38-4
 XX
 ID	motif38-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	47	0
 02	0	0	0	47
 03	10	11	0	26
@@ -5239,7 +5239,7 @@ XX
 AC	motif38-5
 XX
 ID	motif38-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	51	0	2	0
 02	8	4	12	29
 03	0	0	53	0
@@ -5258,7 +5258,7 @@ XX
 AC	motif39-1
 XX
 ID	motif39-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	65
 02	50	0	15	0
 03	0	50	15	0
@@ -5289,7 +5289,7 @@ XX
 AC	motif39-2
 XX
 ID	motif39-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	92
 02	81	0	11	0
 03	0	59	33	0
@@ -5321,7 +5321,7 @@ XX
 AC	motif39-3
 XX
 ID	motif39-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	63
 02	45	0	18	0
 03	0	44	19	0
@@ -5353,7 +5353,7 @@ XX
 AC	motif39-4
 XX
 ID	motif39-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	6	0	79	12
 02	0	80	17	0
 03	0	97	0	0
@@ -5387,7 +5387,7 @@ XX
 AC	motif39-5
 XX
 ID	motif39-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	29
 02	26	0	3	0
 03	0	18	11	0
@@ -5419,7 +5419,7 @@ XX
 AC	motif39-6
 XX
 ID	motif39-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	19	5	0
 02	0	24	0	0
 03	6	7	2	9
@@ -5451,7 +5451,7 @@ XX
 AC	motif40-1
 XX
 ID	motif40-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	0	21	0
 02	0	10	13	3
 03	7	7	0	12
@@ -5469,7 +5469,7 @@ XX
 AC	motif40-2
 XX
 ID	motif40-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	51	7	32	0
 02	36	3	26	25
 03	0	0	90	0
@@ -5489,7 +5489,7 @@ XX
 AC	motif40-3
 XX
 ID	motif40-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	3	19	0
 02	12	3	17	18
 03	0	0	50	0
@@ -5509,7 +5509,7 @@ XX
 AC	motif41-1
 XX
 ID	motif41-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	37	4	0
 02	0	0	41	0
 03	0	41	0	0
@@ -5533,7 +5533,7 @@ XX
 AC	motif41-2
 XX
 ID	motif41-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	85	0	2
 02	16	26	26	19
 03	17	17	20	33
@@ -5557,7 +5557,7 @@ XX
 AC	motif41-3
 XX
 ID	motif41-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	53	1	0
 02	0	0	54	0
 03	0	54	0	0
@@ -5581,7 +5581,7 @@ XX
 AC	motif41-4
 XX
 ID	motif41-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	74	0	0
 02	22	21	17	14
 03	14	19	15	26
@@ -5604,7 +5604,7 @@ XX
 AC	motif42-1
 XX
 ID	motif42-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	43	0
 02	1	13	27	2
 03	43	0	0	0
@@ -5642,7 +5642,7 @@ XX
 AC	motif42-2
 XX
 ID	motif42-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	48	0
 02	0	13	31	4
 03	48	0	0	0
@@ -5680,7 +5680,7 @@ XX
 AC	motif42-3
 XX
 ID	motif42-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	62	0	0
 02	5	57	0	0
 03	0	4	0	58
@@ -5718,7 +5718,7 @@ XX
 AC	motif42-4
 XX
 ID	motif42-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	95	0
 02	0	28	56	11
 03	95	0	0	0
@@ -5756,7 +5756,7 @@ XX
 AC	motif42-5
 XX
 ID	motif42-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	20	0	0
 02	2	18	0	0
 03	0	1	0	19
@@ -5794,7 +5794,7 @@ XX
 AC	motif42-6
 XX
 ID	motif42-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	23	0	0
 02	2	21	0	0
 03	0	0	0	23
@@ -5832,7 +5832,7 @@ XX
 AC	motif42-7
 XX
 ID	motif42-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	32	0
 02	1	8	21	2
 03	32	0	0	0
@@ -5870,7 +5870,7 @@ XX
 AC	motif42-8
 XX
 ID	motif42-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	40	0	0
 02	2	38	0	0
 03	0	3	0	37
@@ -5908,7 +5908,7 @@ XX
 AC	motif42-9
 XX
 ID	motif42-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	38	0
 02	1	14	21	2
 03	38	0	0	0
@@ -5946,7 +5946,7 @@ XX
 AC	motif42-10
 XX
 ID	motif42-10
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	84	0	0
 02	8	76	0	0
 03	0	7	0	77
@@ -5984,7 +5984,7 @@ XX
 AC	motif43-1
 XX
 ID	motif43-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	18	16	0	10
 02	44	0	0	0
 03	15	5	0	24
@@ -6009,7 +6009,7 @@ XX
 AC	motif43-2
 XX
 ID	motif43-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	87	1	0
 02	21	7	43	17
 03	0	46	0	42
@@ -6035,7 +6035,7 @@ XX
 AC	motif43-3
 XX
 ID	motif43-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	35	0	44
 02	0	0	79	0
 03	38	38	1	2
@@ -6059,7 +6059,7 @@ XX
 AC	motif43-4
 XX
 ID	motif43-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	5	47	5
 02	21	24	0	17
 03	62	0	0	0
@@ -6085,7 +6085,7 @@ XX
 AC	motif43-5
 XX
 ID	motif43-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	90	0	0	0
 02	38	12	0	40
 03	35	19	5	31
@@ -6109,7 +6109,7 @@ XX
 AC	motif44-1
 XX
 ID	motif44-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	67	7	0	2
 02	0	9	7	60
 03	0	76	0	0
@@ -6132,7 +6132,7 @@ XX
 AC	motif44-2
 XX
 ID	motif44-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	49	6	0
 02	0	0	0	55
 03	9	12	21	13
@@ -6153,7 +6153,7 @@ XX
 AC	motif44-3
 XX
 ID	motif44-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	10	2	22	19
 02	0	45	0	8
 03	4	32	5	12
@@ -6178,7 +6178,7 @@ XX
 AC	motif44-4
 XX
 ID	motif44-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	79	3	0	2
 02	0	14	8	62
 03	0	84	0	0
@@ -6203,7 +6203,7 @@ XX
 AC	motif44-5
 XX
 ID	motif44-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	59	0	19
 02	2	39	9	28
 03	13	29	21	15
@@ -6229,7 +6229,7 @@ XX
 AC	motif45-1
 XX
 ID	motif45-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	15	0	2
 02	2	19	0	0
 03	0	0	0	21
@@ -6251,7 +6251,7 @@ XX
 AC	motif45-2
 XX
 ID	motif45-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	35	0	12
 02	1	48	0	0
 03	0	0	0	49
@@ -6273,7 +6273,7 @@ XX
 AC	motif45-3
 XX
 ID	motif45-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	67	0
 02	16	11	27	13
 03	16	39	12	0
@@ -6294,7 +6294,7 @@ XX
 AC	motif45-4
 XX
 ID	motif45-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	22	0	0
 02	0	0	0	23
 03	2	21	0	0
@@ -6315,7 +6315,7 @@ XX
 AC	motif45-5
 XX
 ID	motif45-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	48	0
 02	12	4	11	21
 03	9	30	9	0
@@ -6337,7 +6337,7 @@ XX
 AC	motif45-6
 XX
 ID	motif45-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	61	0	0
 02	0	0	0	68
 03	10	58	0	0
@@ -6358,7 +6358,7 @@ XX
 AC	motif45-7
 XX
 ID	motif45-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	39	0
 02	9	6	15	10
 03	4	30	6	0
@@ -6379,7 +6379,7 @@ XX
 AC	motif46-1
 XX
 ID	motif46-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	38	0	0	0
 02	1	0	36	1
 03	0	4	9	25
@@ -6396,7 +6396,7 @@ XX
 AC	motif46-2
 XX
 ID	motif46-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	96	0	0	0
 02	3	0	93	0
 03	33	0	14	49
@@ -6414,7 +6414,7 @@ XX
 AC	motif47-1
 XX
 ID	motif47-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	95	0	0	0
 02	0	0	95	0
 03	0	1	35	59
@@ -6436,7 +6436,7 @@ XX
 AC	motif47-2
 XX
 ID	motif47-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	31	0	2	44
 02	9	34	20	14
 03	55	0	22	0
@@ -6462,7 +6462,7 @@ XX
 AC	motif47-3
 XX
 ID	motif47-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	38	0	13	0
 02	7	5	13	26
 03	3	13	12	23
@@ -6486,7 +6486,7 @@ XX
 AC	motif47-4
 XX
 ID	motif47-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	94	0	0	0
 02	0	0	94	0
 03	0	2	31	61
@@ -6507,7 +6507,7 @@ XX
 AC	motif47-5
 XX
 ID	motif47-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	40	0	11	0
 02	7	10	14	20
 03	9	15	10	17
@@ -6531,7 +6531,7 @@ XX
 AC	motif47-6
 XX
 ID	motif47-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	24	0	2	57
 02	6	38	24	15
 03	61	0	22	0
@@ -6557,7 +6557,7 @@ XX
 AC	motif48-1
 XX
 ID	motif48-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	22	13	53	7
 02	21	30	26	18
 03	1	0	94	0
@@ -6586,7 +6586,7 @@ XX
 AC	motif48-2
 XX
 ID	motif48-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	43	6	1
 02	2	50	0	0
 03	5	0	47	0
@@ -6616,7 +6616,7 @@ XX
 AC	motif48-3
 XX
 ID	motif48-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	57	7	0
 02	2	70	0	0
 03	3	0	67	2
@@ -6645,7 +6645,7 @@ XX
 AC	motif48-4
 XX
 ID	motif48-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	94	0
 02	37	19	14	24
 03	74	7	13	0
@@ -6671,7 +6671,7 @@ XX
 AC	motif48-5
 XX
 ID	motif48-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	9	0	81	1
 02	63	0	17	11
 03	21	64	6	0
@@ -6698,7 +6698,7 @@ XX
 AC	motif48-6
 XX
 ID	motif48-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	23	0	0
 02	2	0	16	5
 03	15	0	4	4
@@ -6727,7 +6727,7 @@ XX
 AC	motif49-1
 XX
 ID	motif49-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	91	0
 02	1	40	44	6
 03	2	87	2	0
@@ -6753,7 +6753,7 @@ XX
 AC	motif49-2
 XX
 ID	motif49-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	21	0
 02	0	12	7	2
 03	1	20	0	0
@@ -6779,7 +6779,7 @@ XX
 AC	motif49-3
 XX
 ID	motif49-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	27	0	0	0
 02	10	3	5	9
 03	10	4	4	9
@@ -6805,7 +6805,7 @@ XX
 AC	motif49-4
 XX
 ID	motif49-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	92	0	0	0
 02	37	15	29	11
 03	23	22	22	25
@@ -6831,7 +6831,7 @@ XX
 AC	motif49-5
 XX
 ID	motif49-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	82	0
 02	2	39	35	6
 03	0	80	2	0
@@ -6857,7 +6857,7 @@ XX
 AC	motif49-6
 XX
 ID	motif49-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	93	0	0	0
 02	35	20	28	10
 03	21	19	29	24
@@ -6883,7 +6883,7 @@ XX
 AC	motif50-1
 XX
 ID	motif50-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	61	0	0
 02	1	30	30	0
 03	0	31	0	30
@@ -6916,7 +6916,7 @@ XX
 AC	motif50-2
 XX
 ID	motif50-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	76	0	0
 02	0	50	26	0
 03	0	40	1	35
@@ -6949,7 +6949,7 @@ XX
 AC	motif50-3
 XX
 ID	motif50-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	32
 02	0	0	9	23
 03	32	0	0	0
@@ -6982,7 +6982,7 @@ XX
 AC	motif50-4
 XX
 ID	motif50-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	75
 02	0	1	14	60
 03	75	0	0	0
@@ -7015,7 +7015,7 @@ XX
 AC	motif51-1
 XX
 ID	motif51-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	16	20	35	23
 02	16	22	30	26
 03	31	22	27	14
@@ -7047,7 +7047,7 @@ XX
 AC	motif51-2
 XX
 ID	motif51-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	23	8	2
 02	0	0	0	33
 03	29	3	1	0
@@ -7078,7 +7078,7 @@ XX
 AC	motif51-3
 XX
 ID	motif51-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	36
 02	30	5	0	1
 03	0	6	0	30
@@ -7101,7 +7101,7 @@ XX
 AC	motif51-4
 XX
 ID	motif51-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	57
 02	49	7	1	0
 03	1	10	0	46
@@ -7124,7 +7124,7 @@ XX
 AC	motif51-5
 XX
 ID	motif51-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	57	13	5
 02	0	0	0	75
 03	64	7	2	2
@@ -7148,7 +7148,7 @@ XX
 AC	motif51-6
 XX
 ID	motif51-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	55	2
 02	1	29	3	24
 03	21	1	35	0
@@ -7172,7 +7172,7 @@ XX
 AC	motif51-7
 XX
 ID	motif51-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	89	1
 02	2	48	2	38
 03	24	0	66	0
@@ -7196,7 +7196,7 @@ XX
 AC	motif52-1
 XX
 ID	motif52-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	45	0	0
 02	0	5	40	0
 03	13	32	0	0
@@ -7225,7 +7225,7 @@ XX
 AC	motif52-2
 XX
 ID	motif52-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	54
 02	26	19	9	0
 03	3	1	2	48
@@ -7254,7 +7254,7 @@ XX
 AC	motif52-3
 XX
 ID	motif52-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	24	0	0
 02	0	4	20	0
 03	8	16	0	0
@@ -7283,7 +7283,7 @@ XX
 AC	motif52-4
 XX
 ID	motif52-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	78	0	0
 02	1	5	72	0
 03	29	49	0	0
@@ -7312,7 +7312,7 @@ XX
 AC	motif52-5
 XX
 ID	motif52-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	35	0	0
 02	0	3	32	0
 03	9	26	0	0
@@ -7341,7 +7341,7 @@ XX
 AC	motif52-6
 XX
 ID	motif52-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	22	16	25	21
 02	19	17	23	25
 03	20	26	17	21
@@ -7374,7 +7374,7 @@ XX
 AC	motif52-7
 XX
 ID	motif52-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	51
 02	25	19	7	0
 03	4	1	1	45
@@ -7403,7 +7403,7 @@ XX
 AC	motif52-8
 XX
 ID	motif52-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	93	0	0
 02	1	5	87	0
 03	27	65	0	1
@@ -7432,7 +7432,7 @@ XX
 AC	motif53-1
 XX
 ID	motif53-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	58	0	0
 02	1	31	6	20
 03	0	58	0	0
@@ -7462,7 +7462,7 @@ XX
 AC	motif53-2
 XX
 ID	motif53-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	29	26	40
 02	27	40	22	7
 03	15	20	24	37
@@ -7495,7 +7495,7 @@ XX
 AC	motif53-3
 XX
 ID	motif53-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	89	0	0
 02	1	48	16	24
 03	0	89	0	0
@@ -7529,7 +7529,7 @@ XX
 AC	motif54-1
 XX
 ID	motif54-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	27	3	6	0
 02	0	36	0	0
 03	0	0	0	36
@@ -7566,7 +7566,7 @@ XX
 AC	motif54-2
 XX
 ID	motif54-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	40	0	0
 02	12	25	0	3
 03	0	39	1	0
@@ -7604,7 +7604,7 @@ XX
 AC	motif54-3
 XX
 ID	motif54-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	68	0	0
 02	19	36	0	13
 03	0	62	6	0
@@ -7641,7 +7641,7 @@ XX
 AC	motif54-4
 XX
 ID	motif54-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	97	0	0
 02	24	60	0	13
 03	0	96	1	0
@@ -7677,7 +7677,7 @@ XX
 AC	motif54-5
 XX
 ID	motif54-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	73	0	0
 02	26	40	0	7
 03	0	70	3	0
@@ -7715,7 +7715,7 @@ XX
 AC	motif54-6
 XX
 ID	motif54-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	3	27	15
 02	39	1	5	0
 03	0	45	0	0
@@ -7753,7 +7753,7 @@ XX
 AC	motif54-7
 XX
 ID	motif54-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	54	0	0
 02	16	30	0	8
 03	0	54	0	0
@@ -7790,7 +7790,7 @@ XX
 AC	motif54-8
 XX
 ID	motif54-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	92	0	0
 02	29	48	0	15
 03	0	88	4	0
@@ -7828,7 +7828,7 @@ XX
 AC	motif55-1
 XX
 ID	motif55-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	67	0	0	0
 02	52	11	0	4
 03	1	0	0	66
@@ -7853,7 +7853,7 @@ XX
 AC	motif55-2
 XX
 ID	motif55-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	0	83	0
 02	31	28	16	10
 03	76	0	9	0
@@ -7878,7 +7878,7 @@ XX
 AC	motif55-3
 XX
 ID	motif55-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	30	0	0	0
 02	27	2	0	1
 03	1	0	0	29
@@ -7903,7 +7903,7 @@ XX
 AC	motif55-4
 XX
 ID	motif55-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	33	0	0	0
 02	0	3	26	4
 03	0	25	2	6
@@ -7925,7 +7925,7 @@ XX
 AC	motif56-1
 XX
 ID	motif56-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	27	0	2	50
 02	16	2	14	47
 03	76	0	3	0
@@ -7939,7 +7939,7 @@ XX
 AC	motif56-2
 XX
 ID	motif56-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	23	66	5	0
 02	0	19	75	0
 03	0	2	0	92
@@ -7954,7 +7954,7 @@ XX
 AC	motif56-3
 XX
 ID	motif56-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	17	0	1	47
 02	13	2	10	40
 03	63	0	2	0
@@ -7969,7 +7969,7 @@ XX
 AC	motif56-4
 XX
 ID	motif56-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	11	30	3	0
 02	0	12	32	0
 03	0	1	0	43
@@ -7983,7 +7983,7 @@ XX
 AC	motif56-5
 XX
 ID	motif56-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	21	64	0
 02	0	1	0	84
 03	55	16	3	11
@@ -7997,7 +7997,7 @@ XX
 AC	motif57-1
 XX
 ID	motif57-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	56	0
 02	0	0	0	56
 03	14	24	7	11
@@ -8030,7 +8030,7 @@ XX
 AC	motif57-2
 XX
 ID	motif57-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	23	0
 02	0	0	0	23
 03	7	12	0	4
@@ -8062,7 +8062,7 @@ XX
 AC	motif57-3
 XX
 ID	motif57-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	73	0
 02	0	0	0	73
 03	16	32	4	21
@@ -8094,7 +8094,7 @@ XX
 AC	motif57-4
 XX
 ID	motif57-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	81	0	0	0
 02	33	8	8	32
 03	5	1	75	0
@@ -8126,7 +8126,7 @@ XX
 AC	motif57-5
 XX
 ID	motif57-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	57	0
 02	0	0	0	57
 03	12	29	4	12
@@ -8158,7 +8158,7 @@ XX
 AC	motif57-6
 XX
 ID	motif57-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	60	0	0	0
 02	20	8	9	23
 03	4	1	55	0
@@ -8190,7 +8190,7 @@ XX
 AC	motif58-1
 XX
 ID	motif58-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	61	0	0
 02	0	0	61	0
 03	44	1	6	10
@@ -8211,7 +8211,7 @@ XX
 AC	motif58-2
 XX
 ID	motif58-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	59	0	0
 02	0	60	1	0
 03	0	0	61	0
@@ -8239,7 +8239,7 @@ XX
 AC	motif58-3
 XX
 ID	motif58-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	44	6	0	0
 02	31	18	0	1
 03	11	16	0	23
@@ -8267,7 +8267,7 @@ XX
 AC	motif59-1
 XX
 ID	motif59-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	79	0
 02	26	18	9	26
 03	28	21	15	15
@@ -8301,7 +8301,7 @@ XX
 AC	motif59-2
 XX
 ID	motif59-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	98
 02	30	64	2	2
 03	98	0	0	0
@@ -8335,7 +8335,7 @@ XX
 AC	motif60-1
 XX
 ID	motif60-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	86	9	0	0
 02	95	0	0	0
 03	56	28	8	3
@@ -8361,7 +8361,7 @@ XX
 AC	motif60-2
 XX
 ID	motif60-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	95
 02	0	5	90	0
 03	30	65	0	0
@@ -8387,7 +8387,7 @@ XX
 AC	motif60-3
 XX
 ID	motif60-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	73	3	0	1
 02	77	0	0	0
 03	46	28	2	1
@@ -8413,7 +8413,7 @@ XX
 AC	motif60-4
 XX
 ID	motif60-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	4	76
 02	0	4	76	0
 03	28	52	0	0
@@ -8439,7 +8439,7 @@ XX
 AC	motif60-5
 XX
 ID	motif60-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	1	23
 02	0	0	24	0
 03	12	12	0	0
@@ -8465,7 +8465,7 @@ XX
 AC	motif61-1
 XX
 ID	motif61-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	9	9	3	11
 02	5	6	10	11
 03	8	7	12	5
@@ -8496,7 +8496,7 @@ XX
 AC	motif61-2
 XX
 ID	motif61-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	98	0	0
 02	0	81	8	9
 03	0	0	0	98
@@ -8514,7 +8514,7 @@ XX
 AC	motif61-3
 XX
 ID	motif61-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	11	21	6
 02	2	9	0	32
 03	9	25	9	0
@@ -8536,7 +8536,7 @@ XX
 AC	motif61-4
 XX
 ID	motif61-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	68	0	0
 02	0	60	4	4
 03	0	0	0	68
@@ -8554,7 +8554,7 @@ XX
 AC	motif61-5
 XX
 ID	motif61-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	5	0	17
 02	5	11	6	0
 03	2	2	17	1
@@ -8575,7 +8575,7 @@ XX
 AC	motif61-6
 XX
 ID	motif61-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	70	2	0	0
 02	6	47	13	6
 03	62	0	10	0
@@ -8596,7 +8596,7 @@ XX
 AC	motif62-1
 XX
 ID	motif62-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	4	38	2
 02	0	0	44	0
 03	11	18	6	9
@@ -8611,7 +8611,7 @@ XX
 AC	motif62-2
 XX
 ID	motif62-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	44	0	0	0
 02	44	0	0	0
 03	7	8	9	20
@@ -8625,7 +8625,7 @@ XX
 AC	motif62-3
 XX
 ID	motif62-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	32	0	0	0
 02	32	0	0	0
 03	7	7	10	8
@@ -8642,7 +8642,7 @@ XX
 AC	motif62-4
 XX
 ID	motif62-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	20	0	0	0
 02	20	0	0	0
 03	3	5	4	8
@@ -8659,7 +8659,7 @@ XX
 AC	motif62-5
 XX
 ID	motif62-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	36	0	0	0
 02	36	0	0	0
 03	4	11	7	14
@@ -8676,7 +8676,7 @@ XX
 AC	motif63-1
 XX
 ID	motif63-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	0	65	0
 02	23	19	17	13
 03	0	72	0	0
@@ -8702,7 +8702,7 @@ XX
 AC	motif63-2
 XX
 ID	motif63-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	0	29	0
 02	12	9	6	4
 03	0	31	0	0
@@ -8727,7 +8727,7 @@ XX
 AC	motif63-3
 XX
 ID	motif63-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	16	0	5	3
 02	0	0	24	0
 03	10	12	1	1
@@ -8753,7 +8753,7 @@ XX
 AC	motif63-4
 XX
 ID	motif63-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	94	0
 02	26	41	9	18
 03	77	17	0	0
@@ -8778,7 +8778,7 @@ XX
 AC	motif63-5
 XX
 ID	motif63-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	93	0
 02	32	42	7	12
 03	75	17	1	0
@@ -8803,7 +8803,7 @@ XX
 AC	motif64-1
 XX
 ID	motif64-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	51	0	0	0
 02	0	0	48	3
 03	24	6	16	5
@@ -8834,7 +8834,7 @@ XX
 AC	motif64-2
 XX
 ID	motif64-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	0	62
 02	0	0	63	0
 03	0	0	62	1
@@ -8865,7 +8865,7 @@ XX
 AC	motif64-3
 XX
 ID	motif64-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	64	0	0	0
 02	0	0	63	1
 03	31	1	18	14
@@ -8896,7 +8896,7 @@ XX
 AC	motif64-4
 XX
 ID	motif64-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	92	0	0	0
 02	0	0	84	8
 03	43	8	31	10
@@ -8927,7 +8927,7 @@ XX
 AC	motif65-1
 XX
 ID	motif65-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	77	0	0
 02	71	2	0	4
 03	10	0	0	67
@@ -8962,7 +8962,7 @@ XX
 AC	motif65-2
 XX
 ID	motif65-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	76	0	0
 02	0	0	0	80
 03	80	0	0	0
@@ -8997,7 +8997,7 @@ XX
 AC	motif65-3
 XX
 ID	motif65-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	68
 02	68	0	0	0
 03	0	0	3	65
@@ -9031,7 +9031,7 @@ XX
 AC	motif65-4
 XX
 ID	motif65-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	96	0	0
 02	91	4	0	1
 03	9	0	0	87
@@ -9066,7 +9066,7 @@ XX
 AC	motif65-5
 XX
 ID	motif65-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	27	0	0
 02	26	0	0	1
 03	3	0	0	24
@@ -9101,7 +9101,7 @@ XX
 AC	motif65-6
 XX
 ID	motif65-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	40	0	0
 02	35	4	0	1
 03	6	0	0	34
@@ -9136,7 +9136,7 @@ XX
 AC	motif65-7
 XX
 ID	motif65-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	63	0	0
 02	0	0	0	66
 03	66	0	0	0
@@ -9171,7 +9171,7 @@ XX
 AC	motif65-8
 XX
 ID	motif65-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	84	0	0
 02	77	3	0	4
 03	7	0	0	77
@@ -9206,7 +9206,7 @@ XX
 AC	motif65-9
 XX
 ID	motif65-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	85
 02	85	0	0	0
 03	0	1	4	80
@@ -9240,7 +9240,7 @@ XX
 AC	motif66-1
 XX
 ID	motif66-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	21	24	29
 02	22	29	8	22
 03	18	4	43	16
@@ -9277,7 +9277,7 @@ XX
 AC	motif66-2
 XX
 ID	motif66-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	85	5	0	0
 02	70	20	0	0
 03	2	0	0	88
@@ -9312,7 +9312,7 @@ XX
 AC	motif66-3
 XX
 ID	motif66-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	33	2	0	0
 02	25	10	0	0
 03	2	0	0	33
@@ -9346,7 +9346,7 @@ XX
 AC	motif67-1
 XX
 ID	motif67-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	30	5
 02	22	0	0	13
 03	35	0	0	0
@@ -9367,7 +9367,7 @@ XX
 AC	motif67-2
 XX
 ID	motif67-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	29	0
 02	0	0	0	29
 03	0	0	29	0
@@ -9387,7 +9387,7 @@ XX
 AC	motif67-3
 XX
 ID	motif67-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	85	0
 02	2	0	0	83
 03	0	0	85	0
@@ -9406,7 +9406,7 @@ XX
 AC	motif68-1
 XX
 ID	motif68-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	84	0	3	0
 02	5	6	32	44
 03	12	22	38	15
@@ -9431,7 +9431,7 @@ XX
 AC	motif68-2
 XX
 ID	motif68-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	26	0	1	0
 02	0	1	9	17
 03	4	4	16	3
@@ -9457,7 +9457,7 @@ XX
 AC	motif69-1
 XX
 ID	motif69-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	33	0	4	2
 02	8	5	2	24
 03	2	13	13	11
@@ -9491,7 +9491,7 @@ XX
 AC	motif69-2
 XX
 ID	motif69-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	96	0	0	0
 02	0	7	15	74
 03	0	0	0	96
@@ -9522,7 +9522,7 @@ XX
 AC	motif69-3
 XX
 ID	motif69-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	89	0	0
 02	26	33	18	12
 03	0	89	0	0
@@ -9556,7 +9556,7 @@ XX
 AC	motif69-4
 XX
 ID	motif69-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	68	0	12	2
 02	26	15	9	32
 03	13	20	23	26
@@ -9590,7 +9590,7 @@ XX
 AC	motif69-5
 XX
 ID	motif69-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	96	0	0	0
 02	0	8	17	71
 03	0	0	0	96
@@ -9621,7 +9621,7 @@ XX
 AC	motif69-6
 XX
 ID	motif69-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	53	0	0
 02	16	19	9	9
 03	0	53	0	0
@@ -9655,7 +9655,7 @@ XX
 AC	motif70-1
 XX
 ID	motif70-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	3	53	0
 02	5	24	11	21
 03	27	5	0	29
@@ -9677,7 +9677,7 @@ XX
 AC	motif70-2
 XX
 ID	motif70-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	14	56	0
 02	19	21	11	19
 03	17	20	14	19
@@ -9706,7 +9706,7 @@ XX
 AC	motif70-3
 XX
 ID	motif70-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	21	69	0
 02	24	28	17	21
 03	12	42	16	20
@@ -9732,7 +9732,7 @@ XX
 AC	motif70-4
 XX
 ID	motif70-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	2	19	0
 02	8	6	4	3
 03	4	8	4	5
@@ -9752,7 +9752,7 @@ XX
 AC	motif70-5
 XX
 ID	motif70-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	14	2	59	3
 02	15	24	23	16
 03	39	6	0	33
@@ -9771,7 +9771,7 @@ XX
 AC	motif70-6
 XX
 ID	motif70-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	26	6	0	49
 02	70	11	0	0
 03	10	0	0	71
@@ -9791,7 +9791,7 @@ XX
 AC	motif70-7
 XX
 ID	motif70-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	21	2	0	39
 02	57	5	0	0
 03	12	0	0	50
@@ -9808,7 +9808,7 @@ XX
 AC	motif70-8
 XX
 ID	motif70-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	24	62	0
 02	21	21	19	25
 03	18	30	18	20
@@ -9829,7 +9829,7 @@ XX
 AC	motif70-9
 XX
 ID	motif70-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	99	0
 02	99	0	0	0
 03	3	11	84	1
@@ -9846,7 +9846,7 @@ XX
 AC	motif71-1
 XX
 ID	motif71-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	70	0	1	3
 02	34	22	6	12
 03	20	54	0	0
@@ -9870,7 +9870,7 @@ XX
 AC	motif71-2
 XX
 ID	motif71-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	41	0	0	3
 02	22	12	2	8
 03	10	34	0	0
@@ -9894,7 +9894,7 @@ XX
 AC	motif71-3
 XX
 ID	motif71-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	67	0	1	2
 02	30	21	5	14
 03	16	54	0	0
@@ -9918,7 +9918,7 @@ XX
 AC	motif71-4
 XX
 ID	motif71-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	80	0
 02	33	0	25	22
 03	6	8	22	44
@@ -9942,7 +9942,7 @@ XX
 AC	motif71-5
 XX
 ID	motif71-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	90	0	0	3
 02	31	35	10	17
 03	20	73	0	0
@@ -9966,7 +9966,7 @@ XX
 AC	motif71-6
 XX
 ID	motif71-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	53	0
 02	22	0	14	17
 03	2	10	16	25
@@ -9990,7 +9990,7 @@ XX
 AC	motif71-7
 XX
 ID	motif71-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	55	0
 02	23	0	15	17
 03	5	5	10	35
@@ -10014,7 +10014,7 @@ XX
 AC	motif71-8
 XX
 ID	motif71-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	56	0
 02	28	0	12	17
 03	4	5	14	34
@@ -10038,7 +10038,7 @@ XX
 AC	motif71-9
 XX
 ID	motif71-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	72	0	2	0
 02	29	25	8	12
 03	16	58	0	0
@@ -10062,7 +10062,7 @@ XX
 AC	motif72-1
 XX
 ID	motif72-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	26
 02	20	2	4	0
 03	14	0	0	12
@@ -10085,7 +10085,7 @@ XX
 AC	motif72-2
 XX
 ID	motif72-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	25	0	0	42
 02	30	18	1	18
 03	23	28	1	15
@@ -10111,7 +10111,7 @@ XX
 AC	motif72-3
 XX
 ID	motif72-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	1	18	0
 02	8	4	6	9
 03	7	12	4	4
@@ -10141,7 +10141,7 @@ XX
 AC	motif72-4
 XX
 ID	motif72-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	18	1	24	0
 02	5	6	12	20
 03	11	13	1	18
@@ -10171,7 +10171,7 @@ XX
 AC	motif72-5
 XX
 ID	motif72-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	44	15	1	26
 02	28	40	3	15
 03	14	4	67	1
@@ -10196,7 +10196,7 @@ XX
 AC	motif72-6
 XX
 ID	motif72-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	2	30	0
 02	11	7	4	18
 03	8	13	6	13
@@ -10225,7 +10225,7 @@ XX
 AC	motif72-7
 XX
 ID	motif72-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	26	5	7	6
 02	13	0	0	31
 03	23	10	0	11
@@ -10259,7 +10259,7 @@ XX
 AC	motif72-8
 XX
 ID	motif72-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	35	2	54	0
 02	31	16	10	34
 03	26	22	13	30
@@ -10285,7 +10285,7 @@ XX
 AC	motif72-9
 XX
 ID	motif72-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	49	4	6	7
 02	22	9	24	11
 03	6	30	25	5
@@ -10318,7 +10318,7 @@ XX
 AC	motif73-1
 XX
 ID	motif73-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	30	7	0	0
 02	15	7	3	12
 03	29	0	8	0
@@ -10346,7 +10346,7 @@ XX
 AC	motif73-2
 XX
 ID	motif73-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	38	0	1	2
 02	22	0	19	0
 03	0	0	41	0
@@ -10372,7 +10372,7 @@ XX
 AC	motif73-3
 XX
 ID	motif73-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	62	0	29	0
 02	5	25	36	25
 03	27	13	17	34
@@ -10398,7 +10398,7 @@ XX
 AC	motif73-4
 XX
 ID	motif73-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	1	3	9
 02	28	12	0	1
 03	15	7	0	19
@@ -10427,7 +10427,7 @@ XX
 AC	motif74-1
 XX
 ID	motif74-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	27	0	14
 02	8	0	16	17
 03	8	10	20	3
@@ -10453,7 +10453,7 @@ XX
 AC	motif74-2
 XX
 ID	motif74-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	87	0
 02	88	0	0	0
 03	17	7	16	48
@@ -10480,7 +10480,7 @@ XX
 AC	motif74-3
 XX
 ID	motif74-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	45	0
 02	45	0	0	0
 03	10	3	6	26
@@ -10506,7 +10506,7 @@ XX
 AC	motif74-4
 XX
 ID	motif74-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	36	5	14	22
 02	0	42	0	35
 03	22	0	24	31
@@ -10533,7 +10533,7 @@ XX
 AC	motif74-5
 XX
 ID	motif74-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	2	2	5
 02	0	13	0	9
 03	5	0	7	10
@@ -10560,7 +10560,7 @@ XX
 AC	motif75-1
 XX
 ID	motif75-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	97
 02	23	5	34	35
 03	73	7	11	6
@@ -10591,7 +10591,7 @@ XX
 AC	motif75-2
 XX
 ID	motif75-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	36
 02	15	5	4	12
 03	5	5	26	0
@@ -10622,7 +10622,7 @@ XX
 AC	motif75-3
 XX
 ID	motif75-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	9	12	48	7
 02	1	0	0	75
 03	43	8	13	12
@@ -10654,7 +10654,7 @@ XX
 AC	motif75-4
 XX
 ID	motif75-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	0	23
 02	12	4	3	5
 03	2	1	19	2
@@ -10685,7 +10685,7 @@ XX
 AC	motif75-5
 XX
 ID	motif75-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	3	0	49
 02	0	0	0	52
 03	18	2	10	22
@@ -10716,7 +10716,7 @@ XX
 AC	motif75-6
 XX
 ID	motif75-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	2	0	53
 02	0	0	0	55
 03	11	2	15	27
@@ -10747,7 +10747,7 @@ XX
 AC	motif75-7
 XX
 ID	motif75-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	1	0	48
 02	21	8	7	13
 03	3	3	39	4
@@ -10777,7 +10777,7 @@ XX
 AC	motif75-8
 XX
 ID	motif75-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	2	1	36
 02	0	0	0	39
 03	14	1	10	14
@@ -10809,7 +10809,7 @@ XX
 AC	motif75-9
 XX
 ID	motif75-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	4	0	94
 02	0	0	0	98
 03	25	1	29	43
@@ -10840,7 +10840,7 @@ XX
 AC	motif76-1
 XX
 ID	motif76-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	0	67	0
 02	19	28	4	29
 03	0	80	0	0
@@ -10856,7 +10856,7 @@ XX
 AC	motif76-2
 XX
 ID	motif76-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	0	31	2
 02	9	17	4	16
 03	0	46	0	0
@@ -10870,7 +10870,7 @@ XX
 AC	motif76-3
 XX
 ID	motif76-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	0	32	1
 02	5	17	5	19
 03	0	46	0	0
@@ -10886,7 +10886,7 @@ XX
 AC	motif76-4
 XX
 ID	motif76-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	9	9	6
 02	5	8	11	5
 03	3	9	8	9
@@ -10906,7 +10906,7 @@ XX
 AC	motif76-5
 XX
 ID	motif76-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	25	0	0
 02	0	0	25	0
 03	5	0	9	11
@@ -10920,7 +10920,7 @@ XX
 AC	motif77-1
 XX
 ID	motif77-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	60	10	0
 02	0	0	70	0
 03	0	61	0	9
@@ -10944,7 +10944,7 @@ XX
 AC	motif77-2
 XX
 ID	motif77-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	72	4	0
 02	0	0	76	0
 03	0	68	0	8
@@ -10969,7 +10969,7 @@ XX
 AC	motif77-3
 XX
 ID	motif77-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	23	1	0
 02	0	0	24	0
 03	0	23	0	1
@@ -10994,7 +10994,7 @@ XX
 AC	motif77-4
 XX
 ID	motif77-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	68	9	0
 02	0	0	77	0
 03	0	65	0	12
@@ -11018,7 +11018,7 @@ XX
 AC	motif77-5
 XX
 ID	motif77-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	33	0
 02	0	29	4	0
 03	0	0	33	0
@@ -11043,7 +11043,7 @@ XX
 AC	motif78-1
 XX
 ID	motif78-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	21	1	57	10
 02	7	77	0	5
 03	32	4	2	51
@@ -11079,7 +11079,7 @@ XX
 AC	motif78-2
 XX
 ID	motif78-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	74	0	1
 02	37	4	1	41
 03	0	0	0	83
@@ -11114,7 +11114,7 @@ XX
 AC	motif78-3
 XX
 ID	motif78-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	17	3	67	10
 02	6	88	0	3
 03	40	8	0	49
@@ -11150,7 +11150,7 @@ XX
 AC	motif78-4
 XX
 ID	motif78-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	78	0	4
 02	44	8	0	35
 03	0	0	0	87
@@ -11184,7 +11184,7 @@ XX
 AC	motif78-5
 XX
 ID	motif78-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	55	0	1
 02	26	4	1	29
 03	0	0	0	60
@@ -11219,7 +11219,7 @@ XX
 AC	motif78-6
 XX
 ID	motif78-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	15	2	47	6
 02	0	67	0	3
 03	27	5	0	38
@@ -11252,7 +11252,7 @@ XX
 AC	motif78-7
 XX
 ID	motif78-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	6	43	0	0
 02	22	4	0	23
 03	0	0	0	49
@@ -11286,7 +11286,7 @@ XX
 AC	motif78-8
 XX
 ID	motif78-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	15	0	0	15
 02	0	0	0	30
 03	30	0	0	0
@@ -11320,7 +11320,7 @@ XX
 AC	motif79-1
 XX
 ID	motif79-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	99	0	0	0
 02	99	0	0	0
 03	3	4	84	8
@@ -11347,7 +11347,7 @@ XX
 AC	motif79-2
 XX
 ID	motif79-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	13	7	41
 02	62	0	0	0
 03	62	0	0	0
@@ -11374,7 +11374,7 @@ XX
 AC	motif79-3
 XX
 ID	motif79-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	49	0	0	0
 02	49	0	0	0
 03	3	1	43	2
@@ -11401,7 +11401,7 @@ XX
 AC	motif79-4
 XX
 ID	motif79-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	28	0	0	0
 02	28	0	0	0
 03	0	0	27	1
@@ -11428,7 +11428,7 @@ XX
 AC	motif79-5
 XX
 ID	motif79-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	34	0	0	0
 02	34	0	0	0
 03	0	0	33	1
@@ -11455,7 +11455,7 @@ XX
 AC	motif80-1
 XX
 ID	motif80-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	2	0	45
 02	14	34	0	0
 03	0	0	36	12
@@ -11471,7 +11471,7 @@ XX
 AC	motif80-2
 XX
 ID	motif80-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	2	0	83
 02	16	71	0	0
 03	0	0	61	26
@@ -11485,7 +11485,7 @@ XX
 AC	motif80-3
 XX
 ID	motif80-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	2	6	29
 02	20	9	2	6
 03	1	0	0	36
@@ -11504,7 +11504,7 @@ XX
 AC	motif80-4
 XX
 ID	motif80-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	4	0	84
 02	20	68	0	0
 03	0	0	71	17
@@ -11521,7 +11521,7 @@ XX
 AC	motif80-5
 XX
 ID	motif80-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	39	0	20	3
 02	7	1	7	47
 03	36	9	1	16
@@ -11542,7 +11542,7 @@ XX
 AC	motif80-6
 XX
 ID	motif80-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	2	12	38
 02	35	6	1	13
 03	0	3	0	52
@@ -11561,7 +11561,7 @@ XX
 AC	motif80-7
 XX
 ID	motif80-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	5	0	85
 02	21	69	0	0
 03	0	0	70	20
@@ -11575,7 +11575,7 @@ XX
 AC	motif82-1
 XX
 ID	motif82-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	25	0	0
 02	25	0	0	0
 03	2	5	7	11
@@ -11605,7 +11605,7 @@ XX
 AC	motif82-2
 XX
 ID	motif82-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	92	0	0
 02	92	0	0	0
 03	25	18	25	24
@@ -11635,7 +11635,7 @@ XX
 AC	motif82-3
 XX
 ID	motif82-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	94	0	0
 02	94	0	0	0
 03	17	16	30	31
@@ -11665,7 +11665,7 @@ XX
 AC	motif83-1
 XX
 ID	motif83-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	41	4	6
 02	1	2	3	45
 03	32	8	4	7
@@ -11698,7 +11698,7 @@ XX
 AC	motif83-2
 XX
 ID	motif83-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	16	4	3
 02	0	21	4	0
 03	0	0	1	24
@@ -11733,7 +11733,7 @@ XX
 AC	motif83-3
 XX
 ID	motif83-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	8	8	79
 02	55	20	10	13
 03	0	90	0	8
@@ -11763,7 +11763,7 @@ XX
 AC	motif83-4
 XX
 ID	motif83-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	2	1	42
 02	18	13	8	6
 03	0	43	0	2
@@ -11795,7 +11795,7 @@ XX
 AC	motif83-5
 XX
 ID	motif83-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	43	16	4
 02	0	56	11	3
 03	1	10	3	56
@@ -11830,7 +11830,7 @@ XX
 AC	motif83-6
 XX
 ID	motif83-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	54	6	1
 02	0	2	7	52
 03	31	18	2	10
@@ -11866,7 +11866,7 @@ XX
 AC	motif83-7
 XX
 ID	motif83-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	24	6	2
 02	0	34	2	1
 03	1	1	4	31
@@ -11901,7 +11901,7 @@ XX
 AC	motif84-1
 XX
 ID	motif84-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	54	0	0	0
 02	14	17	9	14
 03	0	11	35	8
@@ -11925,7 +11925,7 @@ XX
 AC	motif84-2
 XX
 ID	motif84-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	55	0	0	0
 02	13	13	15	14
 03	0	10	37	8
@@ -11949,7 +11949,7 @@ XX
 AC	motif84-3
 XX
 ID	motif84-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	47	0	0	0
 02	14	13	11	9
 03	0	7	33	7
@@ -11973,7 +11973,7 @@ XX
 AC	motif84-4
 XX
 ID	motif84-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	85	0	0	0
 02	33	16	17	19
 03	0	18	51	16
@@ -11998,7 +11998,7 @@ XX
 AC	motif84-5
 XX
 ID	motif84-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	48	0	0	0
 02	9	8	13	18
 03	0	6	28	14
@@ -12023,7 +12023,7 @@ XX
 AC	motif85-1
 XX
 ID	motif85-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	32	0	0
 02	32	0	0	0
 03	29	3	0	0
@@ -12055,7 +12055,7 @@ XX
 AC	motif85-2
 XX
 ID	motif85-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	82	0	0
 02	68	0	0	14
 03	69	13	0	0
@@ -12088,7 +12088,7 @@ XX
 AC	motif85-3
 XX
 ID	motif85-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	56	0	0
 02	47	1	0	8
 03	48	8	0	0
@@ -12120,7 +12120,7 @@ XX
 AC	motif85-4
 XX
 ID	motif85-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	31	0	0
 02	29	0	0	2
 03	30	1	0	0
@@ -12152,7 +12152,7 @@ XX
 AC	motif85-5
 XX
 ID	motif85-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	87	0	0
 02	73	1	0	13
 03	73	11	0	3
@@ -12184,7 +12184,7 @@ XX
 AC	motif85-6
 XX
 ID	motif85-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	11	25	10	10
 02	0	56	0	0
 03	47	2	0	7
@@ -12217,7 +12217,7 @@ XX
 AC	motif86-1
 XX
 ID	motif86-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	1	2	63
 02	1	47	1	25
 03	35	11	25	3
@@ -12246,7 +12246,7 @@ XX
 AC	motif86-2
 XX
 ID	motif86-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	6	61	11	8
 02	13	6	2	65
 03	0	67	0	19
@@ -12276,7 +12276,7 @@ XX
 AC	motif86-3
 XX
 ID	motif86-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	17	18	26
 02	24	2	37	2
 03	47	4	5	9
@@ -12305,7 +12305,7 @@ XX
 AC	motif86-4
 XX
 ID	motif86-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	20	2	1	3
 02	1	5	17	3
 03	0	7	9	10
@@ -12337,7 +12337,7 @@ XX
 AC	motif87-1
 XX
 ID	motif87-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	20	9	11	38
 02	10	48	13	7
 03	3	1	74	0
@@ -12358,7 +12358,7 @@ XX
 AC	motif87-2
 XX
 ID	motif87-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	21	21	15	14
 02	16	15	15	25
 03	24	17	14	16
@@ -12384,7 +12384,7 @@ XX
 AC	motif87-3
 XX
 ID	motif87-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	19	22	23	25
 02	0	0	89	0
 03	36	5	34	14
@@ -12400,7 +12400,7 @@ XX
 AC	motif87-4
 XX
 ID	motif87-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	9	13	6	4
 02	2	3	23	4
 03	13	1	16	2
@@ -12423,7 +12423,7 @@ XX
 AC	motif87-5
 XX
 ID	motif87-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	32	0
 02	14	1	9	8
 03	0	10	0	22
@@ -12445,7 +12445,7 @@ XX
 AC	motif88-1
 XX
 ID	motif88-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	14	13	10	20
 02	11	13	18	15
 03	0	29	0	28
@@ -12469,7 +12469,7 @@ XX
 AC	motif88-2
 XX
 ID	motif88-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	26	0	25
 02	0	0	51	0
 03	0	26	25	0
@@ -12491,7 +12491,7 @@ XX
 AC	motif89-1
 XX
 ID	motif89-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	18	25	20	23
 02	5	37	14	30
 03	39	2	25	20
@@ -12520,7 +12520,7 @@ XX
 AC	motif89-2
 XX
 ID	motif89-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	14	13	14
 02	15	9	12	18
 03	24	4	25	1
@@ -12549,7 +12549,7 @@ XX
 AC	motif89-3
 XX
 ID	motif89-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	83	0	0	1
 02	6	36	10	32
 03	31	34	1	18
@@ -12580,7 +12580,7 @@ XX
 AC	motif89-4
 XX
 ID	motif89-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	24	13	33	30
 02	46	13	33	8
 03	2	4	3	91
@@ -12608,7 +12608,7 @@ XX
 AC	motif89-5
 XX
 ID	motif89-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	99	0	0	1
 02	12	36	7	45
 03	50	34	0	16
@@ -12637,7 +12637,7 @@ XX
 AC	motif89-6
 XX
 ID	motif89-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	21	19	13	18
 02	20	18	15	18
 03	11	23	19	18
@@ -12670,7 +12670,7 @@ XX
 AC	motif89-7
 XX
 ID	motif89-7
-PO	A	C	G	T
+P0	A	C	G	T
 01	10	3	15	13
 02	13	4	24	0
 03	0	2	2	37
@@ -12693,7 +12693,7 @@ XX
 AC	motif89-8
 XX
 ID	motif89-8
-PO	A	C	G	T
+P0	A	C	G	T
 01	19	1	22	31
 02	28	7	37	1
 03	2	2	3	66
@@ -12721,7 +12721,7 @@ XX
 AC	motif89-9
 XX
 ID	motif89-9
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	1	4	55
 02	19	15	2	28
 03	17	16	26	5
@@ -12754,7 +12754,7 @@ XX
 AC	motif90-1
 XX
 ID	motif90-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	89
 02	6	83	0	0
 03	19	55	4	11
@@ -12779,7 +12779,7 @@ XX
 AC	motif90-2
 XX
 ID	motif90-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	87
 02	8	79	0	0
 03	10	70	4	3
@@ -12805,7 +12805,7 @@ XX
 AC	motif90-3
 XX
 ID	motif90-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	23	14	11
 02	5	36	7	4
 03	24	9	12	7
@@ -12830,7 +12830,7 @@ XX
 AC	motif90-4
 XX
 ID	motif90-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	16	3	4	4
 02	6	2	17	2
 03	18	7	1	1
@@ -12853,7 +12853,7 @@ XX
 AC	motif90-5
 XX
 ID	motif90-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	23	24	16	23
 02	18	38	15	15
 03	2	62	14	8
@@ -12879,7 +12879,7 @@ XX
 AC	motif91-1
 XX
 ID	motif91-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	10	12	6
 02	4	13	16	2
 03	14	5	10	6
@@ -12905,7 +12905,7 @@ XX
 AC	motif91-2
 XX
 ID	motif91-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	33	1	13	6
 02	8	20	22	3
 03	16	6	5	26
@@ -12929,7 +12929,7 @@ XX
 AC	motif92-1
 XX
 ID	motif92-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	4	92	4
 02	0	4	1	95
 03	76	3	10	11
@@ -12959,7 +12959,7 @@ XX
 AC	motif92-2
 XX
 ID	motif92-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	2	65	1
 02	1	0	1	66
 03	48	5	8	7
@@ -12989,7 +12989,7 @@ XX
 AC	motif92-3
 XX
 ID	motif92-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	27	1
 02	0	1	0	27
 03	20	1	4	3
@@ -13019,7 +13019,7 @@ XX
 AC	motif92-4
 XX
 ID	motif92-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	8	3	5	6
 02	22	0	0	0
 03	0	8	0	14
@@ -13050,7 +13050,7 @@ XX
 AC	motif93-1
 XX
 ID	motif93-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	88	0
 02	82	4	2	0
 03	4	13	18	53
@@ -13077,7 +13077,7 @@ XX
 AC	motif93-2
 XX
 ID	motif93-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	3	58	0
 02	32	12	11	13
 03	5	9	8	46
@@ -13103,7 +13103,7 @@ XX
 AC	motif93-3
 XX
 ID	motif93-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	64	0
 02	57	3	4	0
 03	7	10	14	33
@@ -13129,7 +13129,7 @@ XX
 AC	motif93-4
 XX
 ID	motif93-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	10	14	5	16
 02	0	0	45	0
 03	40	2	3	0
@@ -13157,7 +13157,7 @@ XX
 AC	motif93-5
 XX
 ID	motif93-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	20	20	28	10
 02	2	2	68	6
 03	2	0	70	6
@@ -13185,7 +13185,7 @@ XX
 AC	motif94-1
 XX
 ID	motif94-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	12	9	11	9
 02	12	8	10	11
 03	0	8	10	23
@@ -13211,7 +13211,7 @@ XX
 AC	motif94-2
 XX
 ID	motif94-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	1	67
 02	12	38	18	0
 03	30	32	0	6
@@ -13235,7 +13235,7 @@ XX
 AC	motif94-3
 XX
 ID	motif94-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	39	2	27	7
 02	11	2	8	54
 03	6	11	39	19
@@ -13261,7 +13261,7 @@ XX
 AC	motif94-4
 XX
 ID	motif94-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	3	1	15
 02	0	9	4	7
 03	9	9	2	0
@@ -13285,7 +13285,7 @@ XX
 AC	motif94-5
 XX
 ID	motif94-5
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	10	21	56
 02	0	0	3	84
 03	16	54	17	0
@@ -13314,7 +13314,7 @@ XX
 AC	motif94-6
 XX
 ID	motif94-6
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	1	59
 02	7	37	16	0
 03	36	20	0	4
@@ -13339,7 +13339,7 @@ XX
 AC	motif95-1
 XX
 ID	motif95-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	86	0	0
 02	66	11	0	9
 03	0	0	82	4
@@ -13368,7 +13368,7 @@ XX
 AC	motif95-2
 XX
 ID	motif95-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	22	25	21
 02	17	24	18	22
 03	21	22	21	17
@@ -13400,7 +13400,7 @@ XX
 AC	motif95-3
 XX
 ID	motif95-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	13	11	20	24
 02	0	66	0	2
 03	51	6	0	11
@@ -13428,7 +13428,7 @@ XX
 AC	motif96-1
 XX
 ID	motif96-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	10	13	9
 02	0	5	0	31
 03	2	2	4	28
@@ -13462,7 +13462,7 @@ XX
 AC	motif96-2
 XX
 ID	motif96-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	6	17	7	9
 02	8	17	10	4
 03	11	6	11	11
@@ -13499,7 +13499,7 @@ XX
 AC	motif96-3
 XX
 ID	motif96-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	3	0	19
 02	0	0	3	19
 03	3	7	10	2
@@ -13533,7 +13533,7 @@ XX
 AC	motif96-4
 XX
 ID	motif96-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	5	4	44
 02	4	1	9	40
 03	8	13	31	2
@@ -13567,7 +13567,7 @@ XX
 AC	motif97-1
 XX
 ID	motif97-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	34	0	1	25
 02	3	25	27	5
 03	0	60	0	0
@@ -13589,7 +13589,7 @@ XX
 AC	motif97-2
 XX
 ID	motif97-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	5	12	1
 02	1	0	0	21
 03	1	5	6	10
@@ -13609,7 +13609,7 @@ XX
 AC	motif97-3
 XX
 ID	motif97-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	12	8	42	9
 02	1	1	0	69
 03	9	7	25	30
@@ -13631,7 +13631,7 @@ XX
 AC	motif98-1
 XX
 ID	motif98-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	0	0	22
 02	2	8	5	7
 03	0	0	22	0
@@ -13664,7 +13664,7 @@ XX
 AC	motif98-2
 XX
 ID	motif98-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	2	4	4	61
 02	6	0	65	0
 03	1	57	7	6
@@ -13694,7 +13694,7 @@ XX
 AC	motif98-3
 XX
 ID	motif98-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	1	0	1	27
 02	4	1	24	0
 03	0	27	2	0
@@ -13720,7 +13720,7 @@ XX
 AC	motif99-1
 XX
 ID	motif99-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	7	3	4	6
 02	2	4	7	7
 03	2	6	7	5
@@ -13751,7 +13751,7 @@ XX
 AC	motif99-2
 XX
 ID	motif99-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	24	27	33	13
 02	58	12	2	25
 03	6	0	87	4
@@ -13780,7 +13780,7 @@ XX
 AC	motif99-3
 XX
 ID	motif99-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	54	0	1	0
 02	54	0	0	1
 03	3	13	0	39
@@ -13808,7 +13808,7 @@ XX
 AC	motif99-4
 XX
 ID	motif99-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	37	2	3	17
 02	1	0	56	2
 03	3	0	56	0
@@ -13836,7 +13836,7 @@ XX
 AC	motif100-1
 XX
 ID	motif100-1
-PO	A	C	G	T
+P0	A	C	G	T
 01	4	0	4	24
 02	2	19	6	5
 03	1	4	27	0
@@ -13860,7 +13860,7 @@ XX
 AC	motif100-2
 XX
 ID	motif100-2
-PO	A	C	G	T
+P0	A	C	G	T
 01	3	2	23	1
 02	0	11	17	1
 03	12	2	7	8
@@ -13885,7 +13885,7 @@ XX
 AC	motif100-3
 XX
 ID	motif100-3
-PO	A	C	G	T
+P0	A	C	G	T
 01	5	0	4	39
 02	2	32	9	5
 03	1	3	44	0
@@ -13911,7 +13911,7 @@ XX
 AC	motif100-4
 XX
 ID	motif100-4
-PO	A	C	G	T
+P0	A	C	G	T
 01	0	43	0	0
 02	0	0	43	0
 03	43	0	0	0

@@ -39,7 +39,7 @@ def write_pfm(motif_id, pwm, nsites, forward_offset, reverse_offset, rc, out_fh,
     out_fh.write('AC\t{}\n'.format(motif_id))
     out_fh.write('XX\n')
     out_fh.write('ID\t{}\n'.format(motif_id))
-    out_fh.write('PO	A	C	G	T\n')
+    out_fh.write('P0	A	C	G	T\n')
     for j in range(pwm.shape[0]):
         out_fh.write('{:02d}\t{}\t{}\t{}\t{}\n'.format(j + 1, *rng.multinomial(nsites, pwm[j, :])))
     out_fh.write('XX\n')
