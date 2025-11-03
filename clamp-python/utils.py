@@ -27,13 +27,16 @@ def check_periodicity(pfm, p=1):
     logpwm[pwm > 0.] = np.log2(pwm[pwm > 0.])
     bits = np.sum(pwm * logpwm, axis=1) + 2.
     w = pfm.shape[0]
-    per = []
+    corr_sum = 0
     total_bit_prod = 0
-    for i in range(p, w, p):
-        per = np.concatenate([per, pearsonr(pfm[i:, :].T, pfm[:-i, :].T)[0] * bits[i:] * bits[:-i]])
-        total_bit_prod += np.sum(bits[i:] * bits[:-i])
-    per[np.isnan(per)] = 0.
-    return np.sum(per) / total_bit_prod
+    for offset in range(p, w, p):
+        for i in range(w - offset):
+            corr = pearsonr(pfm[i, :], pfm[i + offset, :])[0]
+            bit_prod = bits[i] * bits[i + offset]
+            if not np.isnan(corr):
+                corr_sum += corr * bit_prod
+            total_bit_prod += bit_prod
+    return corr_sum / total_bit_prod
 
 def filter_motifs(items, nsites_thresh=10, evalue_thresh=.01, info_score_thresh=5., periodicity1_thresh=.6,
                   periodicity2_thresh=.75, periodicity3_thresh=.75):
