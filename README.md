@@ -72,3 +72,5 @@ CLAMP will create folders inside the folder specified by `--output-dest` with na
  - Aligned stack of logos as an SVG named `clusterX_aligned-motifs.svg`
  - Consensus logo as an SVG named `clusterX_consensus-motif.svg`
  - Optional bed file of binding sites named `clusterX_binding-sites.bed`
+
+Example output for one of the clusters in the simulated data is in `simulated_motifs/cluster404`
