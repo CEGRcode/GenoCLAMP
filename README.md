@@ -43,5 +43,8 @@ python clamp-python/run_clamp.py --output-dest new_clamp_out {other_args}
 CLAMP will create folders inside the folder specified by `--output-dest` with names formatted as `clusterX`. Each folder will contain three files:
 
  - Aligned PFMs in transfac format named `clusterX_aligned-motifs.transfac`
- - Consensus PFM in transfac format named `clusterX_consensus-pfm.transfac`
- - Aligned stack of logos as an SVG named `clusterX.svg`
+ - Consensus PFM in transfac format named `clusterX_consensus-motif.transfac`
+ - Consensus PFM in meme format named `clusterX_consensus-motif.meme`
+ - Aligned stack of logos as an SVG named `clusterX_aligned-motifs.svg`
+ - Consensus logo as an SVG named `clusterX_consensus-motif.svg`
+ - Optional bed file of binding sites named `clusterX_binding-sites.bed`
