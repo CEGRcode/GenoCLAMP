@@ -69,7 +69,7 @@ def trim_motif(aligned_pfms, info_thresh=.5, w=2):
 
     # If there is only one motif, return the original PFM
     if aligned_pfms.shape[0] == 1:
-        return pfm, 0, pfm.shape[0], False
+        return pfm, 0, 0, False
 
     # Calculate the posterior probability of each base (1 pseudocount)
     pwm = pfm / np.sum(pfm, axis=1, keepdims=True)
@@ -85,7 +85,7 @@ def trim_motif(aligned_pfms, info_thresh=.5, w=2):
     # Trim the PFM to only include bases with information content above the threshold
     informative_bits = np.flatnonzero(mean_bits > info_thresh)
     if len(informative_bits) <= 1:
-        return pfm, 0, pfm.shape[0], False
+        return pfm, 0, 0, False
     start = informative_bits[0]
     end = informative_bits[-1] + w
     return pfm[start:end, :], start, pfm.shape[0] - end, True
