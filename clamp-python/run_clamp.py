@@ -37,7 +37,7 @@ if __name__ == '__main__':
     else:
         parser.error('Either --meme or --meme-list must be specified')
     
-    items, sources, sites = parse_meme_files(meme_files, get_sites=args.get_sites)
+    items = parse_meme_files(meme_files, get_sites=args.get_sites)
     items = filter_motifs(items, nsites_thresh=args.nsites_thresh, evalue_thresh=args.evalue_thresh,
         info_score_thresh=args.info_score_thresh, periodicity1_thresh=args.periodicity1_thresh,
         periodicity2_thresh=args.periodicity2_thresh, periodicity3_thresh=args.periodicity3_thresh)
