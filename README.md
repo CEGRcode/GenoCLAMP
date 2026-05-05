@@ -17,6 +17,8 @@ Genome-wide protein-DNA genome-wide mapping projects have generated thousands of
  - numpy
  - scipy
  - numba
+ - openpyxl (for the output summary)
+ - cairosvg (optional, for the output summary)
 
 ### Getting started
 To download CLAMP:
