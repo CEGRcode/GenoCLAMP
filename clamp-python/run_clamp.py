@@ -3,7 +3,7 @@ import os
 from engine import GreedyEngine
 from utils import filter_motifs, trim_motif
 from input import parse_meme_files
-from output import write_aligned_transfac, write_consensus_transfac, write_consensus_meme, plot_logo_stack, write_bed_file
+from output import write_aligned_transfac, write_consensus_transfac, write_consensus_meme, plot_logo_stack, write_bed_file, write_summary_excel
 import argparse
 
 if __name__ == '__main__':
@@ -50,6 +50,10 @@ if __name__ == '__main__':
         os.makedirs(args.output_dest)
 
     maximal_clusters = engine.clusters_trace[np.argmax(engine.llr_trace)]
+
+    write_summary_excel(engine, maximal_clusters, '{}/summary.xlsx'.format(args.output_dest),
+                        info_thresh=args.trim_thresh, sites=args.get_sites)
+
     for c in maximal_clusters:
         # Create a directory for each cluster
         if not os.path.exists('{}/cluster{}'.format(args.output_dest, c)):

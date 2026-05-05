@@ -1,8 +1,19 @@
 import os
 import json
-from collections import namedtuple
+from collections import namedtuple, defaultdict
 import numpy as np
 import xml.dom.minidom as dom
+import openpyxl
+from openpyxl.cell.text import InlineFont
+from openpyxl.cell.rich_text import TextBlock, CellRichText
+from openpyxl.styles.colors import Color
+from openpyxl.styles import PatternFill
+try:
+    from cairosvg import svg2png
+    use_cairosvg = True
+except ImportError:
+    use_cairosvg = False
+from io import BytesIO
 from utils import trim_motif
 
 def write_aligned_transfac(cluster, filename):
@@ -129,3 +140,138 @@ def write_bed_file(cluster, filename):
     with open(filename, 'w') as f:
         for (chrom, start, end, strand), sources in cluster.sites.items():
             f.write('{}\t{}\t{}\t{}\t.\t{}\n'.format(chrom, start, end, ';'.join(source[0] for source in sources), strand))
+
+def idx2col(idx):
+    col = []
+    while idx:
+        idx, rem = divmod(idx - 1, 26)
+        col.append(chr(ord('A') + rem))
+    return ''.join(reversed(col))
+
+nucleotide_map = np.array(['N', 'A', 'C', 'M', 'G', 'R', 'S', 'V', 'T', 'W', 'Y', 'H', 'K', 'D', 'B', 'N'])
+bitmap = 1 << np.arange(4)
+def pfm2iupac(pfm):
+    mask = pfm > np.max(pfm, axis=1, keepdims=True) / 2
+    mask[np.sum(pfm * mask, axis=1) < .6 * np.sum(pfm, axis=1), :] = 0
+    return ''.join(nucleotide_map[np.sum(mask * bitmap, axis=1)])
+
+fonts = defaultdict(lambda: InlineFont(rFont='Courier', color='888888'))
+fonts.update(A=InlineFont(rFont='Courier', color='FF0000'), C=InlineFont(rFont='Courier', color='0000FF'),
+             G=InlineFont(rFont='Courier', color='FFA500'), T=InlineFont(rFont='Courier', color='228B22'))
+
+def write_summary_excel(engine, maximal_clusters, filename, info_thresh=1., sites=False):
+    wb = openpyxl.Workbook()
+    ws1 = wb.worksheets[0]
+    ws1.title = 'Motif clusters'
+    ws1['A1'] = 'Cluster ID'
+    ws1['B1'] = 'Consensus logo'
+    ws1.column_dimensions['B'].width = 55
+    ws1['C1'] = 'IUPAC sequence'
+    ws1.column_dimensions['C'].width = 32
+    ws1['D1'] = 'BLLR'
+    ws1['E1'] = 'Scaled BLLR'
+    ws1['F1'] = 'N component motifs'
+    ws1['G1'] = 'Sources'
+    if sites:
+        ws1['H1'] = 'N sites'
+        full_sources = set()
+        for c in maximal_clusters:
+            for item in engine.clusters[c].items:
+                full_sources.add(item.source[0])
+        source_col_map = {source: idx2col(i + 8) for i, source in enumerate(full_sources)}
+        for source, col in source_col_map.items():
+            ws1['{}1'.format(col)] = '{} loci'.format(source)
+
+        ws2 = wb.create_sheet('Reference points')
+        ws2['A1'] = 'Chrom'
+        ws2['B1'] = 'Start'
+        ws2['C1'] = 'End'
+        ws2['D1'] = 'Cluster ID'
+        ws2['E1'] = 'Strand'
+        ws2['F1'] = 'Sources'
+
+    for i, c in enumerate(sorted(maximal_clusters, key=lambda c_: engine.clusters[c_].llr, reverse=True)):
+        ws1.row_dimensions[i + 2].height = 25
+        pfm, left_offset, right_offset, trimmed = trim_motif(engine.clusters[c].aligned_pfms, info_thresh=info_thresh)
+        iupac_seq = CellRichText()
+        for nuc in pfm2iupac(pfm):
+            iupac_seq.append(TextBlock(fonts[nuc], nuc))
+        logo = plot_logo_stack(np.expand_dims(pfm, 0))
+
+        ws1['A{}'.format(i + 2)] = 'cluster{}'.format(c)
+        if use_cairosvg:
+            ws1.add_image(openpyxl.drawing.image.Image(BytesIO(svg2png(logo.toxml(), dpi=200, output_height=30))), anchor='B{}'.format(i + 2))
+        else:
+            cell = 'B{}'.format(i + 2)
+            link = 'cluster{0}/cluster{0}_consensus-motif.svg'.format(c)
+            ws1[cell] = link
+            ws1[cell].hyperlink = link
+            ws1[cell].style = 'Hyperlink'
+        ws1['C{}'.format(i + 2)] = iupac_seq
+        ws1['D{}'.format(i + 2)] = engine.clusters[c].llr
+        ws1['D{}'.format(i + 2)].number_format = '0.00'
+        ws1['E{}'.format(i + 2)] = engine.clusters[c].llr / len(engine.clusters[c].items)
+        ws1['E{}'.format(i + 2)].number_format = '0.00'
+        ws1['F{}'.format(i + 2)] = len(engine.clusters[c].items)
+
+        sources = set()
+        for item in engine.clusters[c].items:
+            sources.add(item.source[0])
+        ws1['G{}'.format(i + 2)] = ';'.join(sources)
+
+        if sites:
+            ws1['H{}'.format(i + 2)] = len(engine.clusters[c].sites)
+            site_counter = {}
+            for site, source_set in engine.clusters[c].sites.items():
+                for source in source_set:
+                    site_counter.setdefault(source, 0)
+                    site_counter[source] += 1
+            for source, nsites in site_counter.items():
+                ws1['{}{}'.format(source_col_map[source], i + 2)] = nsites
+                ws1['{}{}'.format(source_col_map[source], i + 2)].fill = PatternFill(start_color='FFFFF261', end_color='FFFFF261', fill_type='solid')
+        
+            for (chrom, start, end, strand), source_set in engine.clusters[c].sites.items():
+                if strand == '+':
+                    start += left_offset
+                    end -= right_offset
+                else:
+                    start += right_offset
+                    end -= left_offset
+                ws2['A{}'.format(total_sites)] = chrom
+                ws2['B{}'.format(total_sites)] = start
+                ws2['C{}'.format(total_sites)] = end
+                ws2['D{}'.format(total_sites)] = 'cluster{}'.format(i + 1)
+                ws2['E{}'.format(total_sites)] = strand
+                ws2['F{}'.format(total_sites)] = ';'.join(source_set)
+                total_sites += 1
+        
+    ws3 = wb.create_sheet('Input motifs')
+    ws3['A1'] = 'Motif ID'
+    ws3['B1'] = 'Logo'
+    ws3.column_dimensions['B'].width = 55
+    ws3['C1'] = 'IUPAC sequence'
+    ws3.column_dimensions['C'].width = 32
+    ws3['D1'] = 'Source'
+    ws3['E1'] = 'N sites'
+    ws3['F1'] = 'E-value'
+    
+    for i, item in enumerate(engine.items):
+        pfm = item.pfm
+        doc = plot_logo_stack(np.expand_dims(pfm, 0))
+        iupac_seq = CellRichText()
+        for nuc in pfm2iupac(pfm):
+            iupac_seq.append(TextBlock(fonts[nuc], nuc))
+        
+        ws3.row_dimensions[i + 2].height = 25
+    
+        ws3['A{}'.format(i + 2)] = 'input{}'.format(i + 1)
+        if use_cairosvg:
+            ws3.add_image(openpyxl.drawing.image.Image(BytesIO(svg2png(doc.toxml(), dpi=200, output_height=30))), anchor='B{}'.format(i + 2))
+        else:
+            ws3['B{}'.format(i + 2)] = 'Install cairosvg to view input logo'
+        ws3['C{}'.format(i + 2)] = iupac_seq
+        ws3['D{}'.format(i + 2)] = item.source[0]
+        ws3['E{}'.format(i + 2)] = item.source[1]
+        ws3['F{}'.format(i + 2)] = item.source[2]
+    
+    wb.save(filename)
