@@ -10,11 +10,11 @@ struct GreedyItem
     revcomp::Matrix{Float64}
     width::Int64
     source::Tuple{String, Int64, Float64}
-    sites::Set{String, Int64, Int64, String}
+    sites::Set{Tuple{String, Int64, Int64, String}}
 end
 function GreedyItem(idx::Int64, pfm::Matrix{Float64},
         source::Tuple{String, Int64, Float64},
-        sites::Set{String, Int64, Int64, String})::GreedyItem
+        sites::Set{Tuple{String, Int64, Int64, String}})::GreedyItem
     return GreedyItem(idx, pfm, reverse(pfm), size(pfm, 1), source, sites)
 end
 
