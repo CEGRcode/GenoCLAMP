@@ -1,13 +1,14 @@
-include("./engine.jl")
-
 module Input
+
+include("./engine.jl")
+using .Engine: GreedyItem
 
 function parse_meme_files(meme_files::Vector{String}; get_sites::Bool = true,
     nsites_pattern::Regex = r"letter-probability matrix: alength= \d+ w= \d+ nsites= (\d+) E= ([\d.+e-]+)",
     weights_pattern::Regex = r"\s*([\d\.]+)\s*([\d\.]+)\s*([\d\.]+)\s*([\d\.]+)",
-    width_pattern::Regex = r"MOTIF.+width =\s+(\d+)")::Vector{Engine.GreedyItem}
+    width_pattern::Regex = r"MOTIF.+width =\s+(\d+)")::Vector{GreedyItem}
 
-    items = Vector{Engine.GreedyItem}()
+    items = Vector{GreedyItem}()
     sites = Dict{Int64, Set{Tuple{String, Int64, Int64, Char}}}()
     n = 0
     for fn in meme_files
@@ -54,8 +55,7 @@ function parse_meme_files(meme_files::Vector{String}; get_sites::Bool = true,
                         i += 1
                     end
                     source = (fn * "-motif" * string(file_n), nsites, evalue)
-                    push!(items, Engine.GreedyItem(n, pfm, source,
-                        get_sites ? sites[n] : Set{Tuple{String, Int64, Int64, Char}}()))
+                    push!(items, GreedyItem(n, pfm, source, get_sites ? sites[n] : Set{Tuple{String, Int64, Int64, Char}}()))
                     file_n += 1
                     n += 1
                 end

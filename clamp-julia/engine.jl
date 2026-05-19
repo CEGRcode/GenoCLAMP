@@ -1,8 +1,9 @@
-using SpecialFunctions
+module Engine
+
+using SpecialFunctions: loggamma
 using Base.Threads
 include("./utils.jl")
-
-module Engine
+using .Utils: boltzmann
 
 struct GreedyItem
     idx::Int64
@@ -37,7 +38,7 @@ function GreedyCluster(idx::Int64, items::Vector{GreedyItem},
 
     aligned_pfms_eps = aligned_pfms .+ 1e-20
     aligned_posterior_pwms = aligned_pfms_eps ./ sum(aligned_pfms_eps, dims=3)
-    min_bits = dropdims(Utils.boltzmann(dropdims(sum(aligned_posterior_pwms .* log2.(aligned_posterior_pwms), dims=3), dims=3) .+ 2., -2., 1), dims=1)
+    min_bits = dropdims(boltzmann(dropdims(sum(aligned_posterior_pwms .* log2.(aligned_posterior_pwms), dims=3), dims=3) .+ 2., -2., 1), dims=1)
     
     consensus_pwm = dropdims(sum(aligned_pfms_eps, dims=1) ./ sum(aligned_pfms_eps, dims=(1, 3)), dims=1)
     bits = dropdims(sum(consensus_pwm .* log2.(consensus_pwm), dims=2), dims=2) .+ 2
@@ -49,6 +50,7 @@ end
 struct GreedyEngine
     items::Vector{GreedyItem}
     clusters::Vector{GreedyCluster}
+    alphabet_length::Int64
     pc::Vector{Float64}
     lgpc::Vector{Float64}
     pc_sum::Float64
@@ -61,9 +63,10 @@ struct GreedyEngine
     llr_trace::Vector{Float64}
     cache::Dict{Tuple{Int64, Int64}, Tuple{Array{Float64, 3}, Float64, Float64, Float64, Float64, Int64, Int64, Int64, Int64, Bool}}
 end
-function GreedyEngine(items::Vector{GreedyItem}; pc::Vector{Float64} = [2., 2., 2., 2.],
-        min_base_overlap::Int64 = 4, min_information_overlap::Float64 = 8.,
-        max_information_overhang::Float64 = 12., concentration::Float64 = .5)::GreedyEngine
+function GreedyEngine(items::Vector{GreedyItem}; alphabet_length::Int64 = 4,
+        pc::Vector{Float64} = [2., 2., 2., 2.], min_base_overlap::Int64 = 4,
+        min_information_overlap::Float64 = 8., max_information_overhang::Float64 = 12.,
+        concentration::Float64 = .5)::GreedyEngine
     clusters = Vector{GreedyCluster}(undef, length(items))
     for (idx, item) in enumerate(items)
         if size(item.pfm, 2) != alphabet_length
@@ -78,7 +81,7 @@ function GreedyEngine(items::Vector{GreedyItem}; pc::Vector{Float64} = [2., 2., 
     lgpc = loggamma.(pc)
     pc_sum = sum(pc)
     lga = loggamma(pc_sum)
-    return GreedyEngine(items, clusters, pc, lgpc, pc_sum, lga, min_base_overlap,
+    return GreedyEngine(items, clusters, alphabet_length, pc, lgpc, pc_sum, lga, min_base_overlap,
         min_information_overlap, max_information_overhang, concentration, [Vector{Int64}(1:length(items))], [0.],
         Dict{Tuple{Int64, Int64}, Tuple{Array{Float64, 3}, Float64, Float64, Float64, Float64, Int64, Int64, Int64, Int64, Bool}}())
 end
@@ -131,7 +134,7 @@ function compute_maximal_llr(engine::GreedyEngine, c1::Int64, c2::Int64)::Tuple{
     right_offset1::Int64 = 0
     left_offset2::Int64 = 0
     right_offset2::Int64 = 0
-    rc::Bool = False
+    rc::Bool = false
     for i in 1:width1 + width2 - 1
         start1 = max(i - width1 + 1, 1)
         start2 = max(width1 - i + 1, 1)
@@ -143,10 +146,11 @@ function compute_maximal_llr(engine::GreedyEngine, c1::Int64, c2::Int64)::Tuple{
             sum(bits2[1:start1 - 1]) + sum(bits2[start1 + overlap:end]) +
             sum(abs.(bits1[start2:start2 + overlap - 1] - bits2[start1:start1 + overlap - 1]))
         
+        combined_width = width1 + max(i, width2) - min(i, width1)
+
         if info_overlap_forward >= engine.min_information_overlap &&
             info_overhang_forward <= engine.max_information_overhang
-            combined_pfms = zeros(Float64, n1 + n2, width1 + max(i, width2) - min(i, width1),
-                engine.alphabet_length)
+            combined_pfms = zeros(Float64, n1 + n2, combined_width, engine.alphabet_length)
             combined_pfms[1:n1, start1:start1 + width1 - 1, :] = cluster1.aligned_pfms
             combined_pfms[n1 + 1:n1 + n2, start2:start2 + width2 - 1, :] = cluster2.aligned_pfms
             potential_llr = compute_llr(combined_pfms, engine.pc, engine.lgpc, engine.pc_sum, engine.lga)
@@ -169,8 +173,7 @@ function compute_maximal_llr(engine::GreedyEngine, c1::Int64, c2::Int64)::Tuple{
         
         if info_overlap_reverse >= engine.min_information_overlap &&
             info_overhang_reverse <= engine.max_information_overhang
-            combined_pfms = zeros(Float64, n1 + n2, width1 + max(i, width2) - min(i, width1),
-                engine.alphabet_length)
+            combined_pfms = zeros(Float64, n1 + n2, combined_width, engine.alphabet_length)
             combined_pfms[1:n1, start1:start1 + width1 - 1, :] = cluster1.aligned_pfms
             combined_pfms[n1 + 1:n1 + n2, start2:start2 + width2 - 1, :] = cluster2_reverse_pfms
             potential_llr = compute_llr(combined_pfms, engine.pc, engine.lgpc, engine.pc_sum, engine.lga)
@@ -187,11 +190,11 @@ function compute_maximal_llr(engine::GreedyEngine, c1::Int64, c2::Int64)::Tuple{
     end
 
     scaled_llr = maximal_llr * (n1 + n2) ^ engine.concentration
-    scaled_llr1 = cluster1.llr * n1 ^ concentration
-    scaled_llr2 = cluster2.llr * n2 ^ concentration
-    return aligned_pfms, maximal_llr, maximal_llr - llr1 - llr2, scaled_llr,
-        scaled_llr - scaled_llr1 - scaled_llr2, left_offset1, right_offset1,
-        left_offset2, right_offset2, rc
+    scaled_llr1 = cluster1.llr * n1 ^ engine.concentration
+    scaled_llr2 = cluster2.llr * n2 ^ engine.concentration
+    return aligned_pfms, maximal_llr, maximal_llr - cluster1.llr - cluster2.llr,
+        scaled_llr, scaled_llr - scaled_llr1 - scaled_llr2, left_offset1,
+        right_offset1, left_offset2, right_offset2, rc
 end
 
 function one_iteration!(engine::GreedyEngine, lk::ReentrantLock)
@@ -259,7 +262,7 @@ function one_iteration!(engine::GreedyEngine, lk::ReentrantLock)
     end
     for site in keys(cluster2.sites)
         chrom, start, stop, strand = site
-        if (strand == '+' & rc) | (strand == '-' & !rc)
+        if (strand == '+' && rc) || (strand == '-' && !rc)
             expanded_site = (chrom, start - right_offset2, stop + left_offset2, '-')
         else
             expanded_site = (chrom, start - left_offset2, stop + right_offset2, '+')

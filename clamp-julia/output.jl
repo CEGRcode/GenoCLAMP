@@ -1,10 +1,12 @@
+module Output
+
 using Printf
 import JSON
 using XML
 include("./engine.jl")
-using Engine: GreedyCluster
+using .Engine: GreedyEngine, GreedyCluster
 include("./utils.jl")
-using Utils: trim_motif, xlogx
+using .Utils: trim_motif, xlogx
 
 clamp_dir = dirname(@__DIR__)
 glyph_data = open("$clamp_dir/logo_symbols/glyphs.json", "r") do io
@@ -13,8 +15,6 @@ end
 symbol_library = open("$clamp_dir/logo_symbols/symbol_library.json", "r") do io
     JSON.parse(io)
 end
-
-module Output
 
 function write_aligned_transfac(cluster::GreedyCluster, filename::String)
     open(filename, "w") do io
@@ -64,19 +64,19 @@ end
 
 symbol_sets = Dict{Symbol, Tuple{Float64, Vector{Tuple{String, String}}}}()
 symbol_sets[:DNA] = (
-    SymbolLibrary["DNA"]["max_bits"],
+    symbol_library["DNA"]["max_bits"],
     [(glyph_data[s["name"]]["path"], s["color"]) for s in symbol_library["DNA"]["symbols"]]
 )
 symbol_sets[:RNA] = (
-    SymbolLibrary["RNA"]["max_bits"],
+    symbol_library["RNA"]["max_bits"],
     [(glyph_data[s["name"]]["path"], s["color"]) for s in symbol_library["RNA"]["symbols"]]
 )
 symbol_sets[:AA] = (
-    SymbolLibrary["AA"]["max_bits"],
+    symbol_library["AA"]["max_bits"],
     [(glyph_data[s["name"]]["path"], s["color"]) for s in symbol_library["AA"]["symbols"]]
 )
 
-function plot_logo_stack(aligned_pfms::Array{Float, 3}; symbol::Symbol = :DNA, glyph_width::Float64 = 100., stack_height::Float64 = 200.)::XML.Element
+function plot_logo_stack(aligned_pfms::Array{Float64, 3}; symbol::Symbol = :DNA, glyph_width::Float64 = 100., stack_height::Float64 = 200.)::XML.Element
     height, width, _ = size(aligned_pfms)
     svg = XML.Element("svg"; baseProfile="full", version="1.1", xmlns="http://www.w3.org/2000/svg", viewBox="0 0 $(width * glyph_width) $(height * stack_height)")
 
@@ -111,17 +111,21 @@ function plot_logo_stack(aligned_pfms::Array{Float, 3}; symbol::Symbol = :DNA, g
                 end
             end
         end
+    end
+    
+    return svg
+end
 
-        return svg
+function write_bed_file(cluster::GreedyCluster, filename::String)
+    open(filename, "w") do io
+        for ((chrom, start, stop, strand), sources) in cluster.sites
+            @printf io "%s\t%d\t%d\t%s\t.\t%s\n" chrom start stop join(sources, ";"), strand
+        end
     end
 end
 
-function write_bed_file(cluster, filename)
-    open(filename, "w") do io
-        for ((chrom, start, stop, strand), sources) in cluster.sites
-            @printf io "%s\t%d\t%d\t%s\t.\t%s\n" chrom start stop join((source[0] for source in sources), ";"), strand
-        end
-    end
+function write_summary_report(engine::GreedyEngine, maximal_clusters::Vector{Int64}, filename::String; info_thres::Float64 = 1., sites::Bool = false)
+
 end
 
 end

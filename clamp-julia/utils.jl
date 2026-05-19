@@ -1,13 +1,13 @@
-using Statistics
-
 module Utils
+
+using Statistics: cor
 
 function highest_n_info_sum(pfm::Matrix{Float64}; n::Int64 = 4, w::Int64 = 3)::Float64
     pwm = pfm ./ sum(pfm, dims=2)
     pwm[pwm .== 0.] .= 1.
     bits = dropdims(sum(pwm .* log2.(pwm), dims=2), dims=2) .+ log2(size(pfm, 2))
     val = sum(bits[1:w]) / w
-    mean_bits = zeros(Float64, size(aligned_pfms, 2) - w + 1)
+    mean_bits = zeros(Float64, length(bits) - w + 1)
     mean_bits[1] = val
     for i in w + 1:length(bits)
         val += (bits[i] - bits[i - w]) / w
