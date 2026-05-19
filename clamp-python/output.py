@@ -190,6 +190,8 @@ def write_summary_excel(engine, maximal_clusters, filename, info_thresh=1., site
         ws2['E1'] = 'Strand'
         ws2['F1'] = 'Sources'
 
+        total_sites = 0
+
     for i, c in enumerate(sorted(maximal_clusters, key=lambda c_: engine.clusters[c_].llr, reverse=True)):
         ws1.row_dimensions[i + 2].height = 25
         pfm, left_offset, right_offset, trimmed = trim_motif(engine.clusters[c].aligned_pfms, info_thresh=info_thresh)
@@ -237,12 +239,12 @@ def write_summary_excel(engine, maximal_clusters, filename, info_thresh=1., site
                 else:
                     start += right_offset
                     end -= left_offset
-                ws2['A{}'.format(total_sites)] = chrom
-                ws2['B{}'.format(total_sites)] = start
-                ws2['C{}'.format(total_sites)] = end
-                ws2['D{}'.format(total_sites)] = 'cluster{}'.format(i + 1)
-                ws2['E{}'.format(total_sites)] = strand
-                ws2['F{}'.format(total_sites)] = ';'.join(source_set)
+                ws2['A{}'.format(total_sites + 2)] = chrom
+                ws2['B{}'.format(total_sites + 2)] = start
+                ws2['C{}'.format(total_sites + 2)] = end
+                ws2['D{}'.format(total_sites + 2)] = 'cluster{}'.format(i + 1)
+                ws2['E{}'.format(total_sites + 2)] = strand
+                ws2['F{}'.format(total_sites + 2)] = ';'.join(source_set)
                 total_sites += 1
         
     ws3 = wb.create_sheet('Input motifs')
