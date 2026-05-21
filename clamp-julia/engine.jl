@@ -2,8 +2,10 @@ module Engine
 
 using SpecialFunctions: loggamma
 using Base.Threads
-include("./utils.jl")
-using .Utils: boltzmann
+
+function boltzmann(arr::Array{Float64}, alpha::Float64, dims::Union{Int64, Tuple})
+    return sum(arr .* exp.(alpha .* arr), dims=dims) ./ sum(exp.(alpha .* arr), dims=dims)
+end
 
 struct GreedyItem
     idx::Int64
@@ -11,11 +13,11 @@ struct GreedyItem
     revcomp::Matrix{Float64}
     width::Int64
     source::Tuple{String, Int64, Float64}
-    sites::Set{Tuple{String, Int64, Int64, String}}
+    sites::Set{Tuple{String, Int64, Int64, Char}}
 end
 function GreedyItem(idx::Int64, pfm::Matrix{Float64},
         source::Tuple{String, Int64, Float64},
-        sites::Set{Tuple{String, Int64, Int64, String}})::GreedyItem
+        sites::Set{Tuple{String, Int64, Int64, Char}})::GreedyItem
     return GreedyItem(idx, pfm, reverse(pfm), size(pfm, 1), source, sites)
 end
 
@@ -27,12 +29,12 @@ struct GreedyCluster
     llr::Float64
     min_bits::Vector{Float64}
     bits::Vector{Float64}
-    sites::Dict{Tuple{String, Int64, Int64, String}, Set{String}}
+    sites::Dict{Tuple{String, Int64, Int64, Char}, Set{String}}
     merged_from::Union{Nothing, Tuple{Int64, Int64}}
 end
 function GreedyCluster(idx::Int64, items::Vector{GreedyItem},
         aligned_pfms::Array{Float64, 3}, llr::Float64,
-        sites::Dict{Tuple{String, Int64, Int64, String}, Set{String}};
+        sites::Dict{Tuple{String, Int64, Int64, Char}, Set{String}};
         merged_from::Union{Nothing, Tuple{Int64, Int64}} = nothing)::GreedyCluster
     _, width, _ = size(aligned_pfms)
 
@@ -72,7 +74,7 @@ function GreedyEngine(items::Vector{GreedyItem}; alphabet_length::Int64 = 4,
         if size(item.pfm, 2) != alphabet_length
             throw(ArgumentError("alphabet_length does not match size of pfm(s)"))
         end
-        sites = Dict{Tuple{String, Int64, Int64, String}, Set{String}}()
+        sites = Dict{Tuple{String, Int64, Int64, Char}, Set{String}}()
         for site in item.sites
             sites[site] = Set([item.source[1]])
         end
@@ -246,7 +248,7 @@ function one_iteration!(engine::GreedyEngine, lk::ReentrantLock)
     cluster1 = engine.clusters[c1]
     cluster2 = engine.clusters[c2]
     cluster_idx = length(engine.clusters) + 1
-    sites = Dict{Tuple{String, Int64, Int64, String}, Set{String}}()
+    sites = Dict{Tuple{String, Int64, Int64, Char}, Set{String}}()
     for site in keys(cluster1.sites)
         chrom, start, stop, strand = site
         if strand == '+'

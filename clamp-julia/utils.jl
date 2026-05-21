@@ -13,7 +13,8 @@ function highest_n_info_sum(pfm::Matrix{Float64}; n::Int64 = 4, w::Int64 = 3)::F
         val += (bits[i] - bits[i - w]) / w
         mean_bits[i - w + 1] = val
     end
-    return sum(sort(mean_bits, rev=true)[1:n])
+    sorted_mean_bits = sort(mean_bits, rev=true)
+    return sum(length(mean_bits) >= 4 ? sorted_mean_bits[1:n] : sorted_mean_bits)
 end
 
 function check_periodicity(pfm::Matrix{Float64}; p::Int64 = 1)::Float64
@@ -34,10 +35,6 @@ function check_periodicity(pfm::Matrix{Float64}; p::Int64 = 1)::Float64
         end
     end
     return corr_sum / total_bit_prod
-end
-
-function boltzmann(arr::Array{Float64}, alpha::Float64, dims::Union{Int64, Tuple})
-    return sum(arr .* exp.(alpha .* arr), dims=dims) ./ sum(exp.(alpha .* arr), dims=dims)
 end
 
 function trim_motif(aligned_pfms::Array{Float64, 3}; info_thresh::Float64 = .5,
@@ -68,8 +65,8 @@ function trim_motif(aligned_pfms::Array{Float64, 3}; info_thresh::Float64 = .5,
     return pfm[start:end_, :], start - 1, size(pfm, 1) - end_, true
 end
 
-function xlogx(x::Real)::Float64
-    return x == 0. ? 0. : x * log(x)
+function xlog2x(x::Real)::Float64
+    return x == 0. ? 0. : x * log2(x)
 end
 
 end
