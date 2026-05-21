@@ -90,4 +90,4 @@ Example command on simulated motifs:
 ```
 julia genoclamp-julia/run_genoclamp.jl --meme simulated_motifs/SIM-1.meme --output-dest simulated_motifs/SIM-1_results
 ```
-Arguments and output are the same as for the python version.
+Arguments and output are the same as for the python version, except for `--n-workers`. Use `julia --threads {n_workers} genoclamp-julia/run_genoclamp.jl ...` instead.
