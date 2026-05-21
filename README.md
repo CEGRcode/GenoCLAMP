@@ -11,7 +11,7 @@
 ## Abstract
 Genome-wide protein–DNA mapping studies have produced thousands of enriched sequence motifs, many of which are redundant or highly similar because transcription factors (TFs) often bind cooperatively as complexes to shared sites. Consolidating these motifs into representative profiles is essential for reducing redundancy and improving the characterization of TF–DNA interactions. Here, we present Genomic CLustered Alignment of Motif Profiles (GenoCLAMP), a new algorithm that unifies motif clustering and alignment to collapse redundant motifs into high-quality merged matrix representations. Using motifs generated from a large-scale Saccharomyces cerevisiae ChIP-exo project, we demonstrate that GenoCLAMP reliably recovers known TF complexes that bind common motifs and uncovers evidence for previously uncharacterized motifs. Moreover, GenoCLAMP-consolidated motifs exhibit distinct positional and combinatorial patterns across genomic features, revealing a broader DNA-sequence “grammar” that structures TF binding across the genome. Together, these results establish GenoCLAMP as a robust and efficient framework for motif consolidation, enhancing both computational analyses and biological interpretation of large-scale TF–DNA binding datasets.
 
-## Software details
+## Software details (python)
 ### Dependencies
  - python >= 3.6
  - numpy
@@ -76,3 +76,18 @@ GenoCLAMP will create folders inside the folder specified by `--output-dest` wit
  - Optional bed file of binding sites named `clusterX_binding-sites.bed`
 
 Example output for one of the clusters in the simulated data is in `simulated_motifs/cluster404`
+
+## Software details (julia)
+The julia version of the code is about 30-50% faster and also has less overhead than the python version.
+### Dependencies
+- julia >= 1.0
+- [SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl)
+- [XML.jl](https://github.com/JuliaComputing/XML.jl)
+- [ArgParse.jl](https://github.com/carlobaldassi/ArgParse.jl)
+
+### Running GenoCLAMP
+Example command on simulated motifs:
+```
+julia genoclamp-julia/run_genoclamp.jl --meme simulated_motifs/SIM-1.meme --output-dest simulated_motifs/SIM-1_results
+```
+Arguments and output are the same as for the python version.
