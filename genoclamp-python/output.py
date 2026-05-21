@@ -53,10 +53,10 @@ def write_consensus_meme(cluster, filename, info_thresh=.5):
         for j in range(trimmed_pfm.shape[0]):
             f.write('{:06f} {:06f} {:06f} {:06f}\n'.format(*(trimmed_pfm[j, :] / np.sum(trimmed_pfm[j, :]))))
 
-clamp_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-with open('{}/logo_symbols/glyphs.json'.format(clamp_dir), 'r') as f:
+genoclamp_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+with open('{}/logo_symbols/glyphs.json'.format(genoclamp_dir), 'r') as f:
     glyph_data = json.load(f)
-with open('{}/logo_symbols/symbol_library.json'.format(clamp_dir), 'r') as f:
+with open('{}/logo_symbols/symbol_library.json'.format(genoclamp_dir), 'r') as f:
     symbol_library = json.load(f)
 
 ColoredGlyph = namedtuple('ColoredGlyph', ['path', 'color'])

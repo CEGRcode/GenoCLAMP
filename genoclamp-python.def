@@ -1,0 +1,12 @@
+Bootstrap: docker
+From: python:3.9-slim
+
+%files
+genoclamp-python genoclamp-python
+logo_symbols logo_symbols
+
+%post
+python3 -m pip install numpy scipy numba openpyxl cairosvg
+
+%runscript
+python /genoclamp-python/run_genoclamp.py "$@"

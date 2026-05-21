@@ -7,7 +7,7 @@ from output import write_aligned_transfac, write_consensus_transfac, write_conse
 import argparse
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Run CLAMP on a set of MEME files')
+    parser = argparse.ArgumentParser(description='Run GenoCLAMP on a set of MEME files')
     parser.add_argument('--meme', nargs='+', default=None, help='MEME files to process')
     parser.add_argument('--meme-list', default=None, help='File containing list of MEME files to process')
     parser.add_argument('--nsites-thresh', type=int, default=10, help='Minimum number of sites to consider a motif')
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     parser.add_argument('--n-workers', type=int, default=None, help='Number of workers to use for parallelization')
     parser.add_argument('--trim-thresh', type=float, default=.5, help='Information threshold for trimming motifs')
     parser.add_argument('--get-sites', action='store_true', help='Whether to extract binding sites from MEME files')
-    parser.add_argument('--output-dest', '-o', default='clamp_out', help='Folder to save results, will be created if it does not exist')
+    parser.add_argument('--output-dest', '-o', default='genoclamp_out', help='Folder to save results, will be created if it does not exist')
     args = parser.parse_args()
 
     if args.meme:

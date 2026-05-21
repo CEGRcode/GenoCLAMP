@@ -73,11 +73,11 @@ function parse_meme_files(meme_files::Vector{String}; get_sites::Bool = true,
 end
 
 ### Output files
-clamp_dir = dirname(@__DIR__)
-glyph_data = open("$clamp_dir/logo_symbols/glyphs.json", "r") do io
+genoclamp_dir = dirname(@__DIR__)
+glyph_data = open("$genoclamp_dir/logo_symbols/glyphs.json", "r") do io
     JSON.parse(io)
 end
-symbol_library = open("$clamp_dir/logo_symbols/symbol_library.json", "r") do io
+symbol_library = open("$genoclamp_dir/logo_symbols/symbol_library.json", "r") do io
     JSON.parse(io)
 end
 
@@ -273,7 +273,7 @@ function main()
         help = "Whether to extract binding sites from MEME files"
         "--output-dest", "-o"
         arg_type = String
-        default = "clamp_out"
+        default = "genoclamp_out"
         help = "Folder to save results, will be created if it does not exist"
     end
     args = parse_args(s)
