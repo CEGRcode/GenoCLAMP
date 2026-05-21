@@ -1,0 +1,12 @@
+Bootstrap: docker
+From: julia:1.12.6
+
+%files
+genoclamp-julia genoclamp-julia
+logo_symbols logo_symbols
+
+%post
+julia -e 'using Pkg; Pkg.add.(["SpecialFunctions", "XML", "ArgParse"])'
+
+%runscript
+julia /genoclamp-julia/run_genoclamp.jl "$@"
