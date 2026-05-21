@@ -137,7 +137,7 @@ function compute_maximal_llr(engine::GreedyEngine, c1::Int64, c2::Int64)::Tuple{
     left_offset2::Int64 = 0
     right_offset2::Int64 = 0
     rc::Bool = false
-    for i in 1:width1 + width2 - 1
+    for i in engine.min_base_overlap:width1 + width2 - engine.min_base_overlap
         start1 = max(i - width1 + 1, 1)
         start2 = max(width1 - i + 1, 1)
         overlap = min(i, width1 + width2 - i, min_width)
