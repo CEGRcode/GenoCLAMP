@@ -5,8 +5,14 @@ From: julia:1.12.6
 genoclamp-julia genoclamp-julia
 logo_symbols logo_symbols
 
+%environment
+export JULIA_DEPOT_PATH=$PWD/precompile:/opt/.julia
+export PATH=/opt/julia/bin:$PATH
+
 %post
-julia -e 'using Pkg; Pkg.add.(["SpecialFunctions", "XML", "ArgParse"])'
+export JULIA_DEPOT_PATH=/opt/.julia
+export PATH=/opt/julia/bin:$PATH
+julia -e 'using Pkg; Pkg.add.(["SpecialFunctions", "XML", "JSON", "ArgParse"])'
 
 %runscript
 julia /genoclamp-julia/run_genoclamp.jl "$@"

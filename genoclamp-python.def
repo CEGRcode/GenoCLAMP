@@ -6,6 +6,8 @@ genoclamp-python genoclamp-python
 logo_symbols logo_symbols
 
 %post
+apt-get update -y
+apt-get install -y libcairo2-dev
 python3 -m pip install numpy scipy numba openpyxl cairosvg
 
 %runscript
