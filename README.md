@@ -11,6 +11,9 @@
 ## Abstract
 Genome-wide protein–DNA mapping studies have produced thousands of enriched sequence motifs, many of which are redundant or highly similar because transcription factors (TFs) often bind cooperatively as complexes to shared sites. Consolidating these motifs into representative profiles is essential for reducing redundancy and improving the characterization of TF–DNA interactions. Here, we present Genomic CLustered Alignment of Motif Profiles (GenoCLAMP), a new algorithm that unifies motif clustering and alignment to collapse redundant motifs into high-quality merged matrix representations. Using motifs generated from a large-scale Saccharomyces cerevisiae ChIP-exo project, we demonstrate that GenoCLAMP reliably recovers known TF complexes that bind common motifs and uncovers evidence for previously uncharacterized motifs. Moreover, GenoCLAMP-consolidated motifs exhibit distinct positional and combinatorial patterns across genomic features, revealing a broader DNA-sequence “grammar” that structures TF binding across the genome. Together, these results establish GenoCLAMP as a robust and efficient framework for motif consolidation, enhancing both computational analyses and biological interpretation of large-scale TF–DNA binding datasets.
 
+## General software notes
+GenoCLAMP includes a python version and a julia version of the software. Python is usually already installed on most operating systems, so the python version may be easier to set up. The julia version may be better for your needs if speed is important. Singularity/Apptainer definition files are provided for both versions.
+
 ## Software details (python)
 ### Dependencies
  - python >= 3.6
