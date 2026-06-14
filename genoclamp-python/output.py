@@ -226,8 +226,8 @@ def write_summary_excel(engine, maximal_clusters, filename, info_thresh=1., site
             site_counter = {}
             for site, source_set in engine.clusters[c].sites.items():
                 for source in source_set:
-                    site_counter.setdefault(source, 0)
-                    site_counter[source] += 1
+                    site_counter.setdefault(source[0], 0)
+                    site_counter[source[0]] += 1
             for source, nsites in site_counter.items():
                 ws1['{}{}'.format(source_col_map[source], i + 2)] = nsites
                 ws1['{}{}'.format(source_col_map[source], i + 2)].fill = PatternFill(start_color='FFFFF261', end_color='FFFFF261', fill_type='solid')
@@ -244,7 +244,7 @@ def write_summary_excel(engine, maximal_clusters, filename, info_thresh=1., site
                 ws2['C{}'.format(total_sites + 2)] = end
                 ws2['D{}'.format(total_sites + 2)] = 'cluster{}'.format(i + 1)
                 ws2['E{}'.format(total_sites + 2)] = strand
-                ws2['F{}'.format(total_sites + 2)] = ';'.join(source_set)
+                ws2['F{}'.format(total_sites + 2)] = ';'.join(s[0] for s in source_set)
                 total_sites += 1
         
     ws3 = wb.create_sheet('Input motifs')
