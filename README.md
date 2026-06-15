@@ -45,6 +45,12 @@ They can also be provided as a newline-delimited text file using `--meme-list`:
 ```
 python genoclamp-python/run_genoclamp.py --meme-list meme_files.txt {other_args}
 ```
+MEME list format:
+```
+/path/to/meme1.meme
+/path/to/meme2.meme
+...
+```
 The default output location is `./genoclamp_out`. This can be changed with `--output-dest` or `-o`:
 ```
 python genoclamp-python/run_genoclamp.py --output-dest new_genoclamp_out {other_args}
