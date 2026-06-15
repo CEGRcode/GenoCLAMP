@@ -178,7 +178,7 @@ def write_summary_excel(engine, maximal_clusters, filename, info_thresh=1., site
         for c in maximal_clusters:
             for item in engine.clusters[c].items:
                 full_sources.add(item.source[0])
-        source_col_map = {source: idx2col(i + 8) for i, source in enumerate(full_sources)}
+        source_col_map = {source: idx2col(i + 9) for i, source in enumerate(full_sources)}
         for source, col in source_col_map.items():
             ws1['{}1'.format(col)] = '{} loci'.format(source)
 
