@@ -104,4 +104,12 @@ julia genoclamp-julia/run_genoclamp.jl --meme simulated_motifs/SIM-1.meme --outp
 Arguments and output are the same as for the Python version, with one exception: the Julia version does not support `--n-workers`. To control parallelism, pass `--threads` directly to Julia: `julia --threads <n_workers> genoclamp-julia/run_genoclamp.jl ...`
 
 ### Merging sites
-If you want to use GenoCLAMP to collapse coinciding individual motif instances for merged motifs (i.e., with the `--get-sites` flag), then the MEME file inputs need to include the primary sequences. By default, MEME suppresses this if there are >1000 primary sequences; this limit can be increased using the `-brief <nbrief>` argument of MEME. Furthermore, the names of the primary sequences must be of the format `<contig>:<start>-<end>(<strand>)` (e.g., `chr1:100-200(+)`). You can use a BED file to generate a compliant FASTA input for MEME using [ScriptManager](https://github.com/CEGRcode/ScriptManager) (using the `sequence-analysis fasta-extract` command with the `--coord-header` flag enabled).
+If you want to use GenoCLAMP to collapse coinciding individual motif instances for merged motifs (i.e., with the `--get-sites` flag), then the MEME file inputs need to include the primary sequences. By default, MEME suppresses this if there are >1000 primary sequences; this limit can be increased using the `-brief <nbrief>` argument of MEME. Furthermore, the names of the primary sequences must be of the format
+```
+<contig>:<start>-<end>(<strand>)
+```
+e.g.,
+```
+chr1:100-200(+)
+```
+You can use a BED file to generate a compliant FASTA input for MEME using [ScriptManager](https://github.com/CEGRcode/ScriptManager) (using the `sequence-analysis fasta-extract` command with the `--coord-header` flag enabled).
