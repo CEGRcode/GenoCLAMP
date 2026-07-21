@@ -113,3 +113,13 @@ e.g.,
 chr1:100-200(+)
 ```
 You can use a BED file to generate a compliant FASTA input for MEME using [ScriptManager](https://github.com/CEGRcode/ScriptManager) (using the `sequence-analysis fasta-extract` command with the `--coord-header` flag enabled).
+
+An overall proprocessing pipeline starting from some number of BED files representing TF binding sites could be:
+```
+scriptmanager sequence-analysis fasta-extract --coord-header <genomeFASTA> <bedFile>
+```
+to get a primary sequences FASTA file, then
+```
+meme -brief <nbrief> [options] <primarySequencesFASTA>
+```
+to get a MEME file. These MEME files could then be collated and used as inputs for GenoCLAMP.
